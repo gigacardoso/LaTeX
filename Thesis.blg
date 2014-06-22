@@ -1,0 +1,11 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Thesis.aux
+The style file: abbrv.bst
+Illegal, another \bibstyle command---line 270 of file Thesis.aux
+ : \bibstyle
+ :          {abbrvnat}
+I'm skipping whatever remains of this command
+Database file #1: Thesis_bib_DB.bib
+Warning--I didn't find a database entry for "Lindstrom2003"
+Warning--empty booktitle in Antunes2010
+Warning--empty booktitle in Rheingold2000
+(There was 1 error message)

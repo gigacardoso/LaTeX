@@ -1,0 +1,304 @@
+\begin{thebibliography}{10}
+
+\bibitem{AbdulKareem2010}
+S.~Abdul-Kareem, S.~Raviraja, N.~Awadh, A.~Kamaruzaman, and A.~Kajindran.
+\newblock Classification and regression tree in prediction of survival of aids
+  patients.
+\newblock {\em Malaysian Journal of Computer Science}, 23(3):153--165, 2010.
+
+\bibitem{Ahn2000}
+J.~Ahn, J.~Kwon, and Y.~Lee.
+\newblock Prediction of 1-year graft survival rates in kidney transplantation:
+  A bayesian network model.
+\newblock In {\em INFORMS $\&$ KORMS}, pages 505--513, 2000.
+
+\bibitem{Anagnostopoulos2006}
+I.~Anagnostopoulos and I.~Maglogiannis.
+\newblock Neural network-based diagnostic and prognostic estimations in breast
+  cancer microscopic instances.
+\newblock {\em Medical and Biological Engineering and Computing},
+  44(9):773--784, 2006.
+
+\bibitem{Antunes2010}
+C.~Antunes.
+\newblock Handbook for educational data mining.
+\newblock pages 353--363, New York, 2010. CRC Press.
+
+\bibitem{Ataide2012}
+E.~Ataide, M.~Garcia, T.~Mattosinho, J.~Almeida, C.~Escanhoela, and I.~Boin.
+\newblock Predicting survival after liver transplantation using up-to-seven
+  criteria in patients with hepatocellular carcinoma.
+\newblock {\em Transplantation Proceedings}, 44(8):2438--2440, 2012.
+
+\bibitem{Aujesky2005}
+D.~Aujesky, D.~Obrosky, R.~Stone, T.~Auble, A.~Perrier, J.~Cornuz, P.-M. Roy,
+  and M.~Fine.
+\newblock Derivation and validation of a prognostic model for pulmonary
+  embolism.
+\newblock {\em American Journal of Respiratory and Critical Care Medicine},
+  172(8):1041--1046, 2005.
+
+\bibitem{Balkau2008}
+B.~Balkau, C.~Lange, L.~Fezeu, J.~Tichet, B.~Lauzon-Guillain, S.~Czernichow,
+  F.~Fumeron, P.~Froguel, M.~Vaxillaire, S.~Cauchi, P.~Ducimetière, and
+  E.~Eschwège.
+\newblock Predicting diabetes: clinical, biological, and genetic approaches:
+  data from the epidemiological study on the insulin resistance syndrome
+  (desir).
+\newblock {\em Diabetes Care}, 31(10):2056--2061, 2008.
+
+\bibitem{Bellaachia2006}
+A.~Bellaachia and E.~Guven.
+\newblock Predicting breast cancer survivability using data mining techniques,
+  2006.
+
+\bibitem{Breems2005}
+D.~Breems, W.~V. Putten, P.~Huijgens, G.~Ossenkoppele, G.~Verhoef, L.~Verdonck,
+  E.~Vellenga, G.~D. Greef, E.~Jacky, J.~der Lelie, M.~Boogaerts, and
+  B.~Löwenberg.
+\newblock Prognostic index for adult patients with acute myeloid leukemia in
+  first relapse.
+\newblock {\em Journal of Clinical Oncology}, 23(9):1969–1978., 2005.
+
+\bibitem{Breiman1984}
+L.~Breiman, J.~Friedman, R.~Olshen, and C.~Stone.
+\newblock {\em Classification and regression trees}.
+\newblock Wadsworth $\&$ Brooks/Cole Advanced Books $\&$ Software., Monterey,
+  CA, 1984.
+
+\bibitem{Chen2010}
+L.~Chen, D.~Magliano, B.~Balkau, S.~Colagiuri, P.~Zimmet, A.~Tonkin,
+  P.~Mitchell, P.~Phillips, and J.~Shaw.
+\newblock Ausdrisk: an australian type 2 diabetes risk assessment tool based on
+  demographic, lifestyle and simple anthropometric measures.
+\newblock {\em The Medical journal of Australia.}, 192(4):197--202, 2010.
+
+\bibitem{Chi2007}
+C.-L. Chi, W.~Street, and W.~Wolbergc.
+\newblock Application of artificial neural network-based survival analysis on
+  two breast cancer datasets.
+\newblock In {\em American Medical Informatics Association Annual Symposium},
+  pages 130--134, 2007.
+
+\bibitem{Choi2009}
+J.~Choi, T.~Han, and R.~Park.
+\newblock A hybrid bayesian network model for predicting breast cancer
+  prognosis.
+\newblock {\em Journal of Korean Society of Medical}, 15(1):49--57, 2009.
+
+\bibitem{Delen2009}
+D.~Delen.
+\newblock Analysis of cancer data: a data mining approach.
+\newblock {\em Expert Systems}, 26(1):100--112, 2009.
+
+\bibitem{Delen2005}
+D.~Delen, G.~Walker, and A.~Kadam.
+\newblock Predicting breast cancer survivability: a comparison of three data
+  mining methods.
+\newblock {\em Artificial Intelligence in Medicine}, 34(2):113--127, 2005.
+
+\bibitem{Dom2009}
+R.~Dom, S.~Kareem, B.~Abidin, A.~Kamaruzaman, and A.~Kajindran.
+\newblock The prediction of aids survival: A data mining approach.
+\newblock In {\em WSEAS Int'l Conf Multivariate Analysis and Its Application in
+  Science and Engineering}, pages 48--53, 2009.
+
+\bibitem{Egger2002}
+M.~Egger, M.~May, G.~Chêne, A.~Phillips, B.~Ledergerber, F.~Dabis,
+  D.~Costagliola, A.~Monforte, F.~Wolf, P.~Reiss, J.~Lundgren, A.~Justice,
+  S.~Staszewski, and et~al.
+\newblock Prognosis of hiv-1-infected patients starting highly active
+  antiretroviral therapy: a collaborative analysis of prospective studies.
+\newblock {\em The Lancet}, 360(9327):119--129, 2002.
+
+\bibitem{Eichinger2010}
+S.~Eichinger, G.~Heinze, L.~Jandeck, and P.~Kyrle.
+\newblock Risk assessment of recurrence in patients with unprovoked deep vein
+  thrombosis or pulmonary embolism.
+\newblock {\em Circulation}, 121(14):1630--1636, 2010.
+
+\bibitem{Endo2008}
+A.~Endo, T.~Shibata, and H.~Tanaka.
+\newblock Comparison of seven algorithms to predict breast cancer survival.
+\newblock {\em Biomedical Soft Computing and Human Sciences}, 13(2):11--16,
+  2008.
+
+\bibitem{Gevaert2006}
+O.~Gevaert, F.~Smet, D.~Timmerman, Y.~Moreau, and B.~Moor.
+\newblock Predicting the prognosis of breast cancer by integrating clinical and
+  microarray data with bayesian networks.
+\newblock {\em Bioinformatics}, 22(14):184--190, 2006.
+
+\bibitem{Hanson1993}
+D.~Hanson, C.~Horsburgh, S.~Fann, J.~Havlik, and S.~Thompson.
+\newblock Survival prognosis of hiv-infected patients.
+\newblock {\em Journal of acquired immune deficiency syndromes}, 6(6):624--629,
+  1993.
+
+\bibitem{Hendriksen2013}
+J.~T. Hendriksen, G.~Geersing, K.~M. Moons, and J.~H. de~Groot.
+\newblock Diagnostic and prognostic prediction models.
+\newblock {\em Journal of Thrombosis and Haemostasis}, 11(Supplement
+  s1):129--141, 2013.
+
+\bibitem{Hong2006}
+Z.~Hong, J.~Wu, G.~Smart, K.~Kaita, S.~Wen, S.~Paton, and M.~Dawood.
+\newblock Survival analysis of liver transplant patients in canada 1997–2002.
+\newblock {\em Transplantation Proceedings}, 38(9):2951--2956, 2006.
+
+\bibitem{Khan2008}
+M.~Khan, J.~Choi, H.~Shin, and M.~Kim.
+\newblock Predicting breast cancer survivability using fuzzy decision trees for
+  personalized healthcare.
+\newblock In {\em Engineering in Medicine and Biology Society, 30th Annual
+  International Conference of the IEEE}, pages 5148--5151, Vancouver, BC, 2008.
+
+\bibitem{Kharya2012}
+S.~Kharya.
+\newblock Using data mining techniques for diagnosis and prognosis of cancer
+  disease.
+\newblock {\em Int'l Journal of Computer Science, Engineering and Information
+  Technology (IJCSEIT)}, 2(2):55--66, 2012.
+
+\bibitem{Kusiak2005}
+A.~Kusiak, B.~Dixon, and S.~Shaha.
+\newblock Predicting survival time for kidney dialysis patients: a data mining
+  approach.
+\newblock {\em Computers in Biology and Medicine}, 35(4):311--327, 2005.
+
+\bibitem{Lakshmi2013}
+K.~Lakshmi, M.~Krishna, and S.~Kumar.
+\newblock Performance comparison of data mining techniques for prediction and
+  diagnosis of breast cancer disease survivability.
+\newblock {\em Asian Journal of Computer Science And Information Technology},
+  3(5):81--87, 2013.
+
+\bibitem{Li2010}
+J.~Li, G.~Serpen, S.~Selman, M.~Franchetti, M.~Riesen, and C.~Schneider.
+\newblock Bayes net classifiers for prediction of renal graft status and
+  survival period.
+\newblock {\em Int'l Journal of Medicine and Medical Sciences}, 1(4):215--221,
+  2010.
+
+\bibitem{Lundin1999}
+M.~Lundin, J.~Lundin, H.~Burke, S.~Toikkanen, L.~Pylkkänen, and H.~Joensuu.
+\newblock Artificial neural networks applied to survival prediction in breast
+  cancer.
+\newblock {\em Oncology}, 57:281--286, 1999.
+
+\bibitem{Mangasarian1995}
+O.~Mangasarian, W.~Street, and W.~Wolberg.
+\newblock Breast cancer diagnosis and prognosis via linear programming.
+\newblock {\em Operations Research}, 43(4):570--577, 1995.
+
+\bibitem{Nash1980}
+C.~Nash, S.~Jones, T.~Moon, S.~Davis, and S.~Salmon.
+\newblock Prediction of outcome in metastatic breast cancer treated with
+  adriamycin combination chemotherapy.
+\newblock {\em Cancer}, 46(11):2380--2388, 1980.
+
+\bibitem{Osofisan2011}
+A.~Osofisan, O.~Adeyemo, B.~Sawyerr, and O.~Eweje.
+\newblock Prediction of kidney failure using artificial neural networks.
+\newblock {\em European Journal of Scientific Research}, 61(4):487, 2011.
+
+\bibitem{Oztekin2009}
+A.~Oztekin, D.~Delen, and Z.~Kong.
+\newblock Predicting the graft survival for heart–lung transplantation
+  patients: An integrated data mining methodology.
+\newblock {\em Int'l Journal of Medical Informatics}, 78(12):84--96, 2009.
+
+\bibitem{Paradise2009}
+M.~Paradise, Z.~Walker, C.~Cooper, R.~Blizard, and C.~Regan.
+\newblock Prediction of survival in alzheimer’s disease – the laser-ad
+  longitudinal study.
+\newblock {\em Int'l Journal of Geriatic Psychiatry}, 24(7):739--747, 2009.
+
+\bibitem{Petrovsky2002}
+N.~Petrovsky, S.~Tam, V.~Brusic, G.~Russ, L.~Socha, and V.~Bajic.
+\newblock Use of artificial neural networks in improving renal transplantation
+  outcomes.
+\newblock {\em Graft}, 5(1):6--13, 2002.
+
+\bibitem{Quinlan1986}
+J.~Quinlan.
+\newblock Induction of decision trees.
+\newblock {\em Machine Learning}, pages 81--106, 1986.
+
+\bibitem{Quinlan1993}
+J.~Quinlan.
+\newblock {\em C4.5: programs for machine learning}.
+\newblock Morgan Kaufmann, San Mateo, 1993.
+
+\bibitem{Rheingold2000}
+S.~Rheingold, A.~Neugut, and A.~Meadows.
+\newblock Holland-frei cancer medicine. 5th edition.
+\newblock page Chapter 156, Hamilton (ON), 2000. BC Decker.
+
+\bibitem{Rodger2008}
+M.~Rodger, S.~Kahn, P.~Wells, D.~Anderson, I.~Chagnon, G.~Gal, S.~Solymoss,
+  M.~Crowther, A.~Perrier, R.~White, L.~Vickars, T.~Ramsay, M.~Betancourt, and
+  M.~Kovacs.
+\newblock Identifying unprovoked thromboembolism patients at low risk for
+  recurrence who can discontinue anticoagulant therapy.
+\newblock {\em Canadian Medical Association Journal}, 179(5):417--426, 2008.
+
+\bibitem{Sackett1996}
+D.~Sackett, W.~Rosenberg, J.~M. Gray, R.~Haynes, and W.~Richardson.
+\newblock Evidence based medicine: what it is and what it isn't.
+\newblock {\em BMJ}, 312(7023):71--2, 1996.
+
+\bibitem{Saxena2013}
+S.~Saxena, V.~S. Kirar, and K.~Burse.
+\newblock A polynomial neural network model for prognostic breast cancer
+  prediction.
+\newblock {\em International Journal of Advanced Trends in Computer Science and
+  Engineering}, 2(1):103--106, 2013.
+
+\bibitem{Shadabi2004}
+F.~Shadabi, R.~Cox, D.~Sharma, and N.~Petrovsky.
+\newblock Use of artificial neural networks in the prediction of kidney
+  transplant outcomes.
+\newblock In {\em Knowledge-Based Intelligent Information and Engineering
+  Systems}, volume 3215, pages 566--572, Welligton, 2004.
+
+\bibitem{Steyerberg2005}
+E.~Steyerberg, M.~Homs, A.~Stokvis, M.~Essink-Bot, P.~Siersema, and G.~the
+  SIREC~Study.
+\newblock Stent placement or brachytherapy for palliation of dysphagia from
+  esophageal cancer: a prognostic model to guide treatment selection.
+\newblock {\em Gastrointestinal Endoscopy}, 62(3):333--340, 2005.
+
+\bibitem{Sun2011}
+B.-Y. Sun, Z.-H. Zhu, J.~Li, and B.~Linghu.
+\newblock Combined feature selection and cancer prognosis using support vector
+  machine.
+\newblock {\em Computational Biology and Bioinformatics, IEEE/ACM Transactions
+  on}, 8(6):1671--1677, 2011.
+
+\bibitem{Wang2012}
+K.-M. Wang, B.~Makond, W.-L. Wu, K.-J. Wang, and Y.~Lin.
+\newblock Optimal data mining method for predicting breast cancer
+  survivability.
+\newblock {\em Int'l Journal of Innovative Management, Information $\&$
+  Production}, 3(2):28--33, 2012.
+
+\bibitem{Watanabe2003}
+T.~Watanabe, E.~Suzuki, H.~Yokoi, and K.~Takabayashi.
+\newblock Application of prototypelines to chronic hepatitis data.
+\newblock In {\em ECML/PKDD Discovery Challenge}, Cavtat, Croatia, 2003.
+
+\bibitem{Wolfe2008}
+R.~Wolfe, K.~McCullough, D.~Schaubel, J.~Kalbfleisch, S.~Murray, M.~Stegall,
+  and A.~Leichtman.
+\newblock Calculating life years from transplant (lyft): Methods for kidney and
+  kidney-pancreas candidates.
+\newblock {\em American Journal of Transplantation}, 8(4p2):997--1011, 2008.
+
+\bibitem{Zhou2011}
+J.~Zhou, L.~Yuan, J.~Liu, and J.~Ye.
+\newblock A multi-task learning formulation for predicting disease progression.
+\newblock In {\em ACM SIGKDD Int'l Conf Knowledge Discovery and Data Mining},
+  pages 814--822. ACM, 2011.
+
+\end{thebibliography}

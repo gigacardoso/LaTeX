@@ -1,0 +1,43 @@
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Example Decision Tree to predict if some students will play football.}}{4}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Artificial Neural Network structure.}}{5}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of 2D SVM optimal hyperplane}}{6}{figure.2.3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces AUCs for the neural network and logistic regression (LR)}}{11}{figure.3.1}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces BaselineSingleObs precision (several classifiers and number of observations).}}{31}{figure.6.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS}}}{31}{figure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis}}}{31}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces BaselineMultipleObs precision (several classifiers and number of observations).}}{32}{figure.6.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS}}}{32}{figure.6.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis}}}{32}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Impact of the number of observations on the precision of the linear regression estimation models for each variable, in the ALS dataset.}}{32}{figure.6.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{32}{figure.6.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{32}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Impact of the number of observations on the precision of the logistic regression estimation models for each variable, in the hepatitis dataset.}}{33}{figure.6.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{33}{figure.6.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{33}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Execution time of feature estimation in both datasets using regression techniques.}}{33}{figure.6.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS - Linear Regression}}}{33}{figure.6.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis - Logistic Regression}}}{33}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Precision of different models.}}{34}{figure.6.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS - linear regression estimations}}}{34}{figure.6.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis - logistic regression estimations}}}{34}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Impact of the number of observation on prognosis models.}}{34}{figure.6.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS - linear regression estimations}}}{34}{figure.6.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis - logistic regression estimations}}}{34}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Impact of the number of observations on the precision of the decision tree estimation models for each variable using both univariate and multivariate models.}}{35}{figure.6.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{35}{figure.6.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{35}{figure.6.8}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Execution time of feature estimation in the hepatitis dataset using decision trees.}}{35}{figure.6.9}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Precision of different models using the decision trees estimations.}}{36}{figure.6.10}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Impact of the number of observation on prognosis models using the decision trees estimations.}}{36}{figure.6.11}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Impact of the number of observations on the precision of the HMM estimation models for each variable using both univariate and multivariate models.}}{37}{figure.6.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{37}{figure.6.12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{37}{figure.6.12}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Execution time of feature estimation in the hepatitis dataset using HMMs.}}{38}{figure.6.13}
+\addvspace {10\p@ }
