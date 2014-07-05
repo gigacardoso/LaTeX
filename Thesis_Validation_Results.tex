@@ -20,7 +20,7 @@ In order to validate our proposal, we used two different real datasets from the 
 \label{subsection:als}
 
 The ALS dataset\footnote{https://nctu.partners.org/ProACT/} includes information from over 8500 ALS patients who participated in industry
- clinical trials. The data include demographic, family and medical history, the patient’s history in terms of ALS symptoms,
+ clinical trials. The data include demographic, family and medical history, the patient's history in terms of ALS symptoms,
  clinical and some laboratorial data. From these, we used a subset composed by the patients that had demographic data, had 
  performed Slow Vital Capacity exams, as well as measurements of their vitals, counting 13 variables: gender, age, height, 
  percentage of normal, subject liters (trial 1, 2 and 3), blood pressure (systolic and diastolic), pulse, respiratory rate,
@@ -44,34 +44,27 @@ Fibrosis is the objective class and it is described by integer values between 0 
  The subset contains 488 patients and the following distribution of 
  classes: 2.05\% of 0, 45.9\% for 1, 21.35\% for 2, 15.19\% for 3 and 15.40\% for 4.
 
--------------------------------------------------------------
+%-------------------------------------------------------------
 
-\subsection{SEER Dataset}
-\label{subsection:seer}
+%\subsection{SEER Dataset}
+%\label{subsection:seer}
 
-The SEER data was requested from the Surveillance, Epidemiology, and End Results (SEER) web site. The data is composed by 9 files where each 
-one contains data related to a specific cancer (breast, colon, urinary, etc.). It is composed by variables that give socio-demographic and
- cancer specific information concerning an incidence of cancer. Each record represents a particular patient-tumor pair within a registry. Each
- record is assigned a case number for each patient, and a unique record number for each specific tumor.
-
-
+%The SEER data was requested from the Surveillance, Epidemiology, and End Results (SEER) web site. The data is composed by 9 files where each one contains data related to a specific cancer (breast, colon, urinary, etc.). It is composed by variables that give socio-demographic and cancer specific information concerning an incidence of cancer. Each record represents a particular patient-tumor pair within a registry. Each record is assigned a case number for each patient, and a unique record number for each specific tumor.
 
  \section{Validation Techniques}
 \label{section:validation}
 
-Both of the datasets have already been used successfully when performing the task of prognosis, the SEER data being use to predict patient 
-survivability while the ALS data was used to predict disease’s progression. 
+Both of the datasets used describe a disease’s progression, in this case Hepatitis and ALS. 
 
 The reason to use 2 datasets describing different diseases, instead of just one, is to show the generalizability of our approach and hopefully
 its similar results in both.
 
 We will not be preprocessing any of the data, because that is not the objective of the proposed work. 
 
-Our objective is to focus on finding a way to use the time dimension when per-forming prognosis, use a patients’ evolution over time, and with
+Our objective is to focus on finding a way to use the time dimension when performing prognosis, use a patients’ evolution over time, and with
 that build a generalizable technique whose results are not so dependent on the data.
 
-For these reasons, and because there are other works where these datasets have been used and preprocessed, \cite{Delen2005} \cite{Choi2009}
-\cite{Lakshmi2013} , we can base our work on their results and use most of our time on the actual task in hand. 
+For these reasons, and because there are other works where these datasets have been used and preprocessed, \cite{Watanabe2003}, we can base our work on their results and use most of our time on the actual task in hand. 
 
 Having the two datasets and the model built, the usual classification metrics will be used, like accuracy, sensitivity and specificity.
 
@@ -100,11 +93,16 @@ Specificity= \frac{ TN}{FP+TN}
 
 Because the use of time is the cornerstone of this work it is also needed to see if it was actually relevant, to do this we will look for the use of temporal patterns in the model created and their relevance in the decision process, i.e. if the model is a decision tree the closer to the root this temporal pattern rules are the more relevant they are in the decision and those showing the importance of time in this matter.
 
-
-
 \section{Experimental Results}
 \label{section:results}
 
+In this section we will present the experimental results of this case study. We begin by describing the baseline for comparison and then present the performance of our approaches using different techniques.
+
+\subsection{Experimental Setup}
+\label{subsection:setup}
+
+All tests were ran on an Asus U36SD with an Intel® Core™ i5 2430M/2410M Processor, clocked at 2.40 GHz, 8Gb of Ram and running 64 bit Windows 8.1 Pro.
+The Weka toolkit\footnote{http://www.cs.waikato.ac.nz/ml/weka/}, version 3.7.10 , was used for the regression and decision tree estimations and classifications. While to perform the HMM estimations, the package HMM \footnote{http://cran.r-project.org/web/packages/HMM/index.html} for the programming language R was used.
 
 \subsection{Diagnosis Model}
 \label{subsection:diagnosis}
@@ -115,9 +113,9 @@ As a baseline for comparison with the proposed approaches we used two models. \e
  uses multiple observations: all information is used here to predict the class at instant $n+1$.
 
 A collection of techniques were used with these models, with both achieving similar results: the precision ranged between 40\% and 55\%,
- depending on the dataset, technique and number of time points used, as seen in \ref{fig:baselinesingle} and \ref{fig:baselinemulti}.
+ depending on the dataset, technique and number of time points used, as seen in Figure \ref{fig:baselinesingle} and Figure \ref{fig:baselinemulti}.
  
- \begin{figure}
+ \begin{figure}[h]
   \begin{subfigmatrix}{2}
 	\subfigure[ALS]{\includegraphics[width=0.49\linewidth]{Figures/base_single_als_tree.png}}
 	\subfigure[Hepatitis]{\includegraphics[width=0.49\linewidth]{Figures/base_single_h_tree.png}}
@@ -126,7 +124,7 @@ A collection of techniques were used with these models, with both achieving simi
   \label{fig:baselinesingle}
 \end{figure}
 
- \begin{figure}
+ \begin{figure}[h]
   \begin{subfigmatrix}{2}
 	\subfigure[ALS]{\includegraphics[width=0.49\linewidth]{Figures/base_multi_als_tree.png}}
 	\subfigure[Hepatitis]{\includegraphics[width=0.49\linewidth]{Figures/base_multi_h_tree.png}}
@@ -135,25 +133,23 @@ A collection of techniques were used with these models, with both achieving simi
   \label{fig:baselinemulti}
 \end{figure}
 
-
-
 \subsection{Regression Techniques}
-\label{subsection:regresion}
+\label{subsection:regression}
 
-Because of the differences of the various datasets, some numeric and some nominal, different regression techniques have been applied
+Because of the differences in the various datasets, some numeric and some nominal, different regression techniques have been applied
  in the estimation phase of this work, namely linear regression for the numeric datasets and logistic regression for the nominal.
   
 \subsubsection{Estimation Models}
 \label{subsubsection:estimation_regression}
 
 The results with the univariate and multivariate estimation models for the ALS dataset, numeric, can be seen in 
-\ref{fig:estimationals}. This models were built using linear regression
- as previously said. Both estimation models were applied using a different number of observations, and the previous.
+Figure \ref{fig:estimationals}. This models were built using linear regression as previously said. Both estimation models were 
+applied using a different number of observations, $3, 5$ and $6$ time steps.
  Because the dataset is numeric we evaluated our estimation by the error, distance, to the actual value at time $t_{n+1}$.
- Both the univariate and the multivariate estimation model presented an average estimation error of  around $9,4$. 
- \hl{, with features having errors as high as $25$ and as low as $0.35$.}
+ Both the univariate and the multivariate estimation model presented an average estimation error of  around $9,4$, with
+ features having errors as high as $25$ and as low as $0.35$.
   
-\begin{figure}
+\begin{figure}[h]
 	\begin{subfigmatrix}{2}
 	\subfigure[Univariate Estimation]{\includegraphics[width=0.49\linewidth]{Figures/estimation_single_als_reg.png}}
 	\subfigure[Multivariate Estimation]{\includegraphics[width=0.49\linewidth]{Figures/estimation_multi_als_reg.png}}
@@ -162,11 +158,11 @@ The results with the univariate and multivariate estimation models for the ALS d
   \label{fig:estimationals}
 \end{figure}
 
-We can also see in \ref{fig:estimationlogh} the results of using Logistic Regression on the
+We can also see in Figure \ref{fig:estimationlogh} the results of using Logistic Regression on the
  Hepatitis dataset. In both cases the average precision of estimation rounded the 80\% range, with the multivariate model being consistently
  a bit worse the the model that uses a single variable.
  
- \begin{figure}
+ \begin{figure}[h]
 	\begin{subfigmatrix}{2}
 	\subfigure[Univariate Estimation]{\includegraphics[width=0.49\linewidth]{Figures/estimation_single_h_log.png}}
 	\subfigure[Multivariate Estimation]{\includegraphics[width=0.49\linewidth]{Figures/estimation_multi_h_log.png}}
@@ -176,30 +172,45 @@ We can also see in \ref{fig:estimationlogh} the results of using Logistic Regres
 \end{figure}
 
 
-In \ref{fig:estimationtimeregression}, we can see the performance analysis, in milliseconds, of the estimation phase, divided by execution time 
-per feature per feature. Its important to note that no significant difference was noticed between the univariate and multivariate estimations 
-when using linear regression. The same cannot be said about logistic regression where the overall estimation of the features on the multivariate
+In Figure \ref{fig:estimationtimelinear} and Figure \ref{fig:estimationtimelog}, we can see the performance analysis, in milliseconds, of the estimation
+ phase. Its important to note that no significant difference was noticed between the univariate and multivariate estimations when using linear regression.
+ The same cannot be said about logistic regression where the overall estimation of the features on the multivariate
 approach took about $(N steps \times 3)$ times more than the univariate.
 
-\begin{figure}
-  \begin{subfigmatrix}{2}
-	\subfigure[ALS - Linear Regression]{\includegraphics[width=0.49\linewidth]{Figures/time_estimation_linear_als.png}}
-	\subfigure[Hepatitis - Logistic Regression]{\includegraphics[width=0.49\linewidth]{Figures/time_estimation_logistic_h.png}}
-  \end{subfigmatrix}
-  \caption{Execution time of feature estimation in both datasets using regression techniques.}
-  \label{fig:estimationtimeregression}
+\begin{figure}[h]
+	\begin{subfigmatrix}{2}
+		\subfigure[Average Estimation Time]{\includegraphics[width=0.49\linewidth]{Figures/time_estimation_average_linear_als.png}}
+		\subfigure[Total Estimation Time]{\includegraphics[width=0.49\linewidth]{Figures/time_estimation_total_linear_als.png}}
+	\end{subfigmatrix}
+	\caption{Execution time of feature estimation in the ALS dataset using Linear Regression.}
+	\label{fig:estimationtimelinear}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{subfigmatrix}{2}
+		\subfigure[Average Estimation Time]{\includegraphics[width=0.49\linewidth]{Figures/time_estimation_average_log_h.png}}
+		\subfigure[Total Estimation Time]{\includegraphics[width=0.49\linewidth]{Figures/time_estimation_total_log_h.png}}
+	\end{subfigmatrix}
+	\caption{Execution time of feature estimation in the hepatitis dataset using Logistic Regression.}
+	\label{fig:estimationtimelog}
 \end{figure}
 
 \subsubsection{Prognosis Results}
 \label{subsubsection:prognosis_regression}
 
 The overall prognosis precision achieved by using different techniques on our approaches, with the predictions achieved by using regression 
-techniques, can be seen in \ref{fig:precisionregression}. 
+techniques, can be seen in Figure \ref{fig:precisionregression}. It's observable that decision tree classifiers outperform the other techniques, with
+both techniques, J48 and RandomForest, achieving better precisions than the corresponding baselines. In the ALS dataset, RandomForest was able to 
+improve the results in about 15\%, with both estimation models. In the Hepatitis dataset the $UvE$ model clearly improved the final
+ precision of the prognosis, achieving an improvement of about 20\%. The $MvE$ model didn't do so well only improving the final prognosis by 5\%. 
 
-\ref{fig:impactregression} shows the relation between the number of observations and the final precision of the prognosis, using both, UvE and MvE
- estimation models, and a variety of techniques.
+Figure \ref{fig:impactregression} shows the relation between the number of observations and the final precision of the prognosis, using both, $UvE$ and $MvE$
+ estimation models, and a variety of techniques. It interesting to note that in the ALS dataset and using linear regression we can see distinctly that
+ the number of steps used and the overall precision are directly proportional. In the Hepatitis datasets the opposite relation is notable, as the number 
+ of time steps used increases the precision decreases or maintains. This leads us to think that, in this dataset, the furthest points in time are not as 
+ relevant to perform the prognosis as the ones closer to $t_{n+1}$.
 
- \begin{figure}
+ \begin{figure}[h]
   \begin{subfigmatrix}{2}
 	\subfigure[ALS - linear regression estimations]{\includegraphics[width=0.49\linewidth]{Figures/precision_als_reg.png}}
 	\subfigure[Hepatitis - logistic regression estimations]{\includegraphics[width=0.49\linewidth]{Figures/precision_h_log.png}} %grafico Hepatiti logistic
@@ -208,7 +219,7 @@ techniques, can be seen in \ref{fig:precisionregression}.
   \label{fig:precisionregression}
 \end{figure}
 
- \begin{figure}
+ \begin{figure}[h]
   \begin{subfigmatrix}{2}
 	\subfigure[ALS - linear regression estimations]{\includegraphics[width=0.49\linewidth]{Figures/impact_als_reg.png}}
 	\subfigure[Hepatitis - logistic regression estimations]{\includegraphics[width=0.49\linewidth]{Figures/impact_h_log.png}} %grafico Hepatiti logistic
@@ -216,9 +227,7 @@ techniques, can be seen in \ref{fig:precisionregression}.
   \caption{Impact of the number of observation on prognosis models.}
   \label{fig:impactregression}
 \end{figure}
- 
-
-
+	
  \subsection{Decision Tree}
 \label{subsection:dt}
 
@@ -231,13 +240,10 @@ In this section, J48 was used as the estimation technique. Because J48 cannot ha
 Before, assessing the results of our prognosis approach, we evaluate the impact of the number of observations used, on the 
 quality of the estimations made through the two estimation models proposed.
 
-Since ALS observations are described by numerical variables and Hepatitis by nominal variables, we measured the prediction
- error (the distance from the predicted to the target value) and the number of correct predictions, respectively.
-
-\ref{fig:estimationtreeh} shows the results with univariate and multivariate estimation models,
- respectively. Both estimation models were applied using a different number of observations, and the previous. 
+Figure \ref{fig:estimationtreeh} shows the results with univariate and multivariate estimation models. Both estimation models were
+ applied using a different number of observations. 
  
-\begin{figure}
+\begin{figure}[h]
   \begin{subfigmatrix}{2}
 	\subfigure[Univariate Estimation]{\includegraphics[width=0.49\linewidth]{Figures/estimation_single_h_tree.png}}
 	\subfigure[Multivariate Estimation]{\includegraphics[width=0.49\linewidth]{Figures/estimation_multi_h_tree.png}}
@@ -251,60 +257,57 @@ Both models reach similar levels of accuracy, with quite good results for the ma
 
 Despite our expectations, it seems that there is no improvement on using multivariate-based estimation.
 
-In \ref{fig:estimationtimetree}, we can see the performance analysis, in milliseconds, of the estimation phase using decision 
-trees, divided by execution time per feature.
+In Figure \ref{fig:estimationtimetree}, the average and total time of execution, in milliseconds, for the feature estimation phase, using J48, is presented. 
 
-It is important to note that even though the estimation using logistic regression had similar results (\ref{fig:estimationlogh}), when looking into to the precision of the estimation, it took much much longer to estimate those results
- ($3\times$ more in the the fastest case and $800\times$ more in the slowest, \ref{fig:estimationtimeregression} ).
+It is important to note that even though the estimation using logistic regression had similar results (Figure \ref{fig:estimationlogh}),
+ when looking into to the precision of the estimation, it took much longer to estimate the results
+ ($3\times$ more in the fastest case and $800\times$ more in the slowest, (Figure \ref{fig:estimationtimelog})).
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.75\textwidth]{Figures/time_estimation_tree_h.png}
-  \caption{Execution time of feature estimation in the hepatitis dataset using decision trees.}
-  \label{fig:estimationtimetree}
+\begin{figure}[h]
+	\begin{subfigmatrix}{2}
+		\subfigure[Average Estimation Time]{\includegraphics[width=0.49\linewidth]{Figures/time_estimation_average_tree_h.png}}
+		\subfigure[Total Estimation Time]{\includegraphics[width=0.49\linewidth]{Figures/time_estimation_total_tree_h.png}}
+	\end{subfigmatrix}
+	\caption{Execution time of feature estimation in the hepatitis dataset using Decision Trees.}
+	\label{fig:estimationtimetree}
 \end{figure}
+
 
 \subsubsection{Prognosis Results}
 \label{subsubsection:prognosis_dt}
 
-The overall prognosis precision achieved by using different techniques on our approaches can be seen in \ref{fig:precisiontree}. The improvements 
-on the precision of our approach are always present when compared to the ones achieved by baseline models 
-(see \ref{fig:baselinesingle} and \ref{fig:baselinemulti}). In Hepatitis dataset the improvements round about 20\%.
+The overall prognosis precision achieved by using different techniques on the decision tree estimations can be seen in Figure \ref{fig:precisiontree}.
+The improvements on the precision of our approach are always present when compared to the ones achieved by baseline models 
+(see Figure \ref{fig:baselinesingle} and Figure \ref{fig:baselinemulti}). In the Hepatitis dataset the improvements round about 20\%.
 
-\ref{fig:impactobservationstree} shows the relation between the number of observations and the final precision of the prognosis, using both, UvE and MvE
- estimation models, and a variety of techniques. It is interesting to note that the higher number of observations become prejudicial
- to the UvE model, which means that the values from the long past do not help to estimate future values. 
+Figure \ref{fig:impactobservationstree} shows the relation between the number of observations and the final precision of the prognosis, using both, UvE and MvE estimation models, and a variety of techniques. Again, and similarly to the regression estimations, it is interesting to note that the higher number of observations become prejudicial to the UvE model, which means that the values from the long past do not help to estimate future values. 
 
 Again there is no clear difference between both estimation models, but decision trees (through C4.5 algorithm – J48) always 
 perform better than the other models. 
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
   \includegraphics[width=0.49\linewidth]{Figures/precision_h_tree.png}
   \caption{Precision of different models using the decision trees estimations.}
   \label{fig:precisiontree}
 \end{figure}
 
- \begin{figure}
+ \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.49\linewidth]{Figures/impact_h_tree.png}
   \caption{Impact of the number of observation on prognosis models using the decision trees estimations.}
   \label{fig:impactobservationstree}
 \end{figure}
 
-
-
-
-
 \subsection{HMM}
 \label{subsection:hmm}
 
-In this final section, HMM were used in the estimation phase. Again like the C4.5 algorithm it doesn't handle
+In this final section, HMMs were used in the estimation phase. Again like the C4.5 algorithm it doesn't handle
 numeric classes so only the hepatitis dataset was used.
 
 The HMMs we used had one state per time step used, so if we had a sequence with data from 7 time instances our HMM 
 would have 7 states. All the probabilities distributions, $\lambda$, would then be initialized randomly and normalized 
-so that the probability distribution equals to 1.
+so that the probability distribution equals 1.
 
 We would then train one HMM per class, using the Baum-Welch algorithm, which is used to adjust $\lambda$ to maximize the 
 likelihood of the training set. The training set was composed by a subset of the data that had the specific class. 
@@ -316,16 +319,10 @@ The prediction phase was done by concatenating all the possible classes to the o
 \subsubsection{Estimation Models}
 \label{subsubsection:estimation_hmm}
 
-\hl{Before, assessing the results of our prognosis approach, we evaluate the impact of the number of observations used, on the 
-quality of the estimations made through the two estimation models proposed.}
-
-\hl{Since ALS observations are described by numerical variables and Hepatitis by nominal variables, we measured the prediction
- error (the distance from the predicted to the target value) and the number of correct predictions, respectively.}
-
-\ref{fig:estimationhmm} shows the results with univariate and multivariate estimation models,
- respectively. Both estimation models were applied using a different number of observations, and the previous. 
+Figure \ref{fig:estimationhmm} shows the results with univariate and multivariate estimation models,
+ respectively. A different number of time steps were used with each estimation model.
  
- \begin{figure}
+ \begin{figure}[h]
   \begin{subfigmatrix}{2}
 	\subfigure[Univariate Estimation]{\includegraphics[width=0.49\linewidth]{Figures/estimation_single_h_hmm.png}}
 	\subfigure[Multivariate Estimation]{\includegraphics[width=0.49\linewidth]{Figures/estimation_multi_h_hmm.png}}
@@ -334,16 +331,16 @@ quality of the estimations made through the two estimation models proposed.}
   \label{fig:estimationhmm}
 \end{figure}
  
- In \ref{fig:estimationtimehmm}, we can see the performance analysis, in milliseconds, of the estimation phase using decision 
-trees, divided by execution time per feature.
+ In Figure \ref{fig:estimationtimehmm}, we can see the performance analysis, in seconds, of the estimation phase using HMMs. As previously said the Baum-Welch algorithm was used in this step. This algorithm tries to maximize the likelihood of the training set and its result can be a local maximum as opposed to the optimum solution. The times presented represent the execution time of 1 iteration of the algorithm, the precision results were achieved by performing 50 iterations.
 
-It is important to note that even though the estimation using logistic regression had similar results (\ref{fig:estimationlogh}
- and \ref{fig:estimationtreeh}), when looking into to the precision of the estimation, it took much much longer to estimate those results
- (\ref{fig:estimationtimeregression} and \ref{fig:estimationtimetree} ).
+This technique achieved similar results in the estimation precision, in the $UvE$ approach while the $MvE$ performed significantly worse than any other. But the time to make those estimations was even bigger than the Logistic regression alternative (see Figure \ref{fig:estimationlogh} and Figure \ref{fig:estimationtreeh}), being between $8$ and $200\times$ slower than it and between $100$ and $6880\times$ slower than decision trees (Figure \ref{fig:estimationtimelog} and Figure \ref{fig:estimationtimetree}).
  
- \begin{figure}
-  \centering
-  \includegraphics[width=0.75\textwidth]{Figures/time_estimation_hmm_h.png}
+ 
+\begin{figure}[h]
+  \begin{subfigmatrix}{2}
+	\subfigure[Average Estimation Time]{\includegraphics[width=0.49\linewidth]{Figures/time_estimation_average_hmm_h.png}}
+	\subfigure[Total Estimation Time]{\includegraphics[width=0.49\linewidth]{Figures/time_estimation_total_hmm_h.png}}
+  \end{subfigmatrix}
   \caption{Execution time of feature estimation in the hepatitis dataset using HMMs.}
   \label{fig:estimationtimehmm}
 \end{figure}
@@ -351,9 +348,24 @@ It is important to note that even though the estimation using logistic regressio
 \subsubsection{Prognosis Results}
 \label{subsubsection:prognosis_hmm}
 
-% ------------------------------------------------------------
+In Figure \ref{fig:precisionhmm} the precision of the various models is shown using different techniques and the HMM estimations. Its curious to note
+that, even though the precision of the estimations as very similar the overall prognosis precision is considerably worse, in both models. This might derive from the fact that the correct estimations made with this technique are not as relevant to the final prognosis as the ones made by using decision trees. 
 
+The impact of the amount of time steps, number of observations, used can be seen in Figure \ref{fig:impactobservationshmm}. Here no clear relation can be extracted.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.49\linewidth]{Figures/precision_h_hmm.png}
+	\caption{Precision of different models using the decision trees estimations.}
+	\label{fig:precisionhmm}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.49\linewidth]{Figures/impact_h_hmm.png}
+	\caption{Impact of the number of observation on prognosis models using the decision trees estimations.}
+	\label{fig:impactobservationshmm}
+\end{figure}
 
 \subsection{Discussion}
 \label{subsection:discussion}
@@ -363,11 +375,23 @@ Currently, medical practice is helped by a variety of computer-aided tools, dedi
  of situations, it has been addressed as a simple diagnosis problem, without exploring the temporality involved.
 
 In order to mimic physicians practice, computer-aided prognosis should take into attention patients’ evolution, considering the 
-different observations made along time. In this paper, we formalize both diagnosis and prognosis problems, making clear the
+different observations made along time. In this dissertation, we formalize both diagnosis and prognosis problems, making clear the
  differences between them, and propose a method to transform the prognosis into a diagnosis task, based on the composition
  of classification over the estimation of observation values. As described above, what distinguishes this approach, from what 
  is found in the literature, is the use of temporal dependencies of the data in order to estimate the future values of every 
  feature and with those values perform a diagnostic in the future. 
+ 
+ Taking into account the presented results of the techniques used, we can say that HMM were clearly the used method that performed
+  the worse. Not only they took a lot longer to perform the estimations but, their results still palled when compared to the use of 
+  regressions or decision trees. The other two methods achieved really similar results, we can only say that when dealing nominal
+  datasets, using decision tree is a better approach when it comes to execution time, while the overall prognosis results are fairly close. 
+  
+  If dealing with numerical dataset, linear regression was the only tested technique in this work, it managed to achieve an improvement 
+  over the baseline.
+  
+  Even though this work focus mostly on the estimation step of the proposed approach, the diagnosis phase still has room for improvement which if done can help improve the final results. One example is the use of more complex complex techniques and ensembles in the classification, that are knows to have better performance than simpler decision trees or regressions.
+  
+  A curious result that counters what initially was thought when this approaches were planned is the performance of the multivariate approach. This approach was initially thought to be better than the univariate because of its ability to find and use dependency relations between variables. That was in fact not the case in the datasets used. This might be because the data has too much noise or simply the relations between the used variables does not exist. Either way the univariate approach was consistently better.
  
  
 \cleardoublepage

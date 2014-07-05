@@ -10,24 +10,18 @@
 %\usepackage{soul}
 \newcommand{\hl}[2][yellow]{\textcolor{#1}{#2}}
 
-\chapter{Introduction}
+\chapter{Introduction} 
 \label{chapter:introduction}
 
-An enormous amount of data exist in the field of healthcare while the amount of knowledge that is being gathered from that data is still very limited.
- The data can be used to teach us new causal relations between symptoms and diseases as well a variety of other relevant information. 
+%An enormous amount of data exist in the field of healthcare while the amount of knowledge that is being gathered from that data is still very limited. The data can be used to teach us new causal relations between symptoms and diseases as well a variety of other relevant information. 
 
-Another way where the use of this data can be very helpful is in the difficult task of prognosis, which helps patients and their carers decide and 
-plan the best course of action to take, taking into account the most probable outcome in the patients dis-ease. Nowadays in data mining, prognosis is
- being done the exactly same way as diagnoses using the current state of the patient, but not taking into account his evolution.
+%Another way where the use of this data can be very helpful is in the difficult task of prognosis, which helps patients and their carers decide and plan the best course of action to take, taking into account the most probable outcome in the patients dis-ease. Nowadays in data mining, prognosis is  being done the exactly same way as diagnoses using the current state of the patient, but not taking into account his evolution.
 
-To fix this problem of not using the evolution of the state of the patient we pro-pose an approach that includes this sequence of states by
- incorporating time in the construction of the prediction model.
+%To fix this problem of not using the evolution of the state of the patient we pro-pose an approach that includes this sequence of states by  incorporating time in the construction of the prediction model.
 
-We will start by describing what is diagnosis and prognosis and how data mining techniques have been used to help in these areas of healthcare.
- We show the state of affairs in terms of prognosis, how it is performed in a variety of diseases showing that the techniques all circle around
- the same. We finish by proposing a different approach for the prognosis problem and discuss how these approaches will be validated. 
+% We will start by describing what is diagnosis and prognosis and how data mining techniques have been used to help in these areas of healthcare.  We show the state of affairs in terms of prognosis, how it is performed in a variety of diseases showing that the techniques all circle around  the same. We finish by proposing a different approach for the prognosis problem and discuss how these approaches will be validated. 
 
-----------------------------------------------------------------------
+%----------------------------------------------------------------------
 
 The role of data analysis in healthcare has gained more attention, as available mining techniques have achieved higher levels of maturity.
  In particular, classification methods become to play a decisive role when applied to clinical trials, by providing high quality external 
@@ -35,7 +29,7 @@ The role of data analysis in healthcare has gained more attention, as available 
  on those trials, allied to the variety of techniques suited to different kinds of data, revealed to be fundamental to keep expertise 
  up-to-date and available worldwide.
 
-Despite the success of those techniques, they are mostly appropriate to analyse tabular data, described by a set of independent variables.
+Despite the success of those techniques, they are mostly appropriate to analyze tabular data, described by a set of independent variables.
  Actually, we can see this kind of data as a static snapshot of the status of some entity, which is completely suited to represent patient
  records collected during their diagnosing process. On the other hand, prognosis may be seen as the prediction of an outcome in a future 
  instant, considering all available data collected along time. In this manner, we may think of prognosis as the task of predicting an
@@ -46,18 +40,14 @@ Actually, and despite this dependency among snapshots, a large number of classif
  (see \cite{Endo2008}, \cite{Paradise2009}, \cite{Zhou2011}, for example). In our opinion, the results achieved through them have been
  impaired due to the dependency among the  different values for the same variable along time. 
 
-In this paper, we argue that the simple prediction of the prognosis outcome by traditional classification methods, given a set of
+In this dissertation, we argue that the simple prediction of the prognosis outcome by traditional classification methods, given a set of
  snapshots, can be significantly improved by exploring the temporal relations, or evolution verified in each variable that compose 
  the snapshots. In order to validate our claim, we formalize the problem addressed, and present an approach to take those dependencies
  into account in the process of outcome prediction. We also perform a comparative analysis between two techniques used to estimate 
  the future values of some features.
 
 After the formalization of the prognosis problem, we review a set of case studies on several different diseases, with the most 
-well-known classification techniques (chapter \ref{chapter:rw}). In chapter \ref{chapter:approach} we describe our approach, and propose two distinct implementations
- of it, followed by a description of some experiments that compare the accuracy of both traditional classifiers and our approach 
- using two different techniques for the estimation phase (chapter \ref{chapter:results}). The paper concludes with a discussion of the improvements 
- achieved, the issues constraining those improvements and proposing some guidelines for the next steps (chapter \ref{chapter:conclusions}).
-
- \hl{falta falar dos outros chapters}
+well-known classification techniques (chapter \ref{chapter:rw}). In chapter \ref{chapter:approach} we describe our approach, and propose two distinct implementations of it, followed by a description of some experiments that compare the accuracy of both traditional classifiers and our approach 
+ using two different techniques for the estimation phase (chapter \ref{chapter:results}). The dissertation concludes with a discussion of the improvements achieved, the issues constraining those improvements and proposing some guidelines for the next steps (chapter \ref{chapter:conclusions}).
 
 \cleardoublepage

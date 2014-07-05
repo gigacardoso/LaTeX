@@ -1,0 +1,74 @@
+\chapter{Approach}
+\label{chapter:approach}
+
+Classification is the problem of determining to which of a group of categories an observation belongs to. 
+Formally you can represent the classification problem as finding the correct class $y$  using the observation
+ features $\bar{x}$ in the pair $(\bar{x},y)$, where $\bar{x}$ is the feature vector and $y$ the class.
+
+\begin{equation}
+	\bar{x} = < x_1,x_2,...,x_n >
+\label{eq:featurevector}
+\end{equation}
+ 
+ Applied to the diagnosis/prognosis problem this is what is currently being done, where a model is created to discover
+ $y_n$  from $\bar{x}_n$. As already mentioned the difference between a prognostic model and a diagnostic model is just the
+ time between the present and the supposed time of $y_n$. 
+
+That is why we are introducing time, the addition of time to the equation turns the pair $(\bar{x},y)$ into the triplet
+ $(\bar{x}_i,y_i,t_i )$ where $t_i$ is a timestamp, $\bar{x}_i$ the feature vector in at time $t_i$ and $y_i$ the class also at time $t_i$.
+
+ \begin{equation}
+	\bar{x}_i = < x_{i1},x_{i2},...,x_{im} >
+\label{eq:temporalvector}
+\end{equation}
+ 
+ In this case we have a sequence S of triplets, that is ordered and that can be used to predict a whole new 
+ triplet $(\bar{x}_{n+1},y_{n+1},t_{n+1})$.
+ 
+  \begin{equation}
+	S= (\bar{x}_1,y_1,t_1 )… (\bar{x}_n,y_n,t_n ) \Rightarrow (\bar{x}_{n+1},y_{n+1},t_{n+1} )
+\label{eq:sequence}
+\end{equation}
+
+Supposing $t_{n+1}$ is known our objective is to find $y_{n+1}$, the class in a future point in time.
+
+In order to find $y_{n+1}$ we propose the following approaches:
+\begin{enumerate}
+\item{ To only find $y_{n+1}$
+
+In this approach $y_{n+1}$ is found just based on the values for the feature vector $\bar{x}$ at each point of time, ignoring the values of $x_{n+1}$
+  and do not trying to estimate them.
+\begin{equation}
+	y_{n+1} = f(x_{i} :1 \leq i \leq n)
+\label{eq:approach1}
+\end{equation}
+  }
+\item{ To find $(\bar{x}_{n+1},y_{n+1})$
+	
+Here  $y_{n+1}$ is found using diagnostic model on the feature vector $\bar{x}_{n+1}$ that, itself is found using various approaches:
+	\begin{enumerate}
+		\item{ $x_{n+1,k}=f(\bar{x}_j:1\leq j \leq n)$
+		\begin{enumerate}
+			\item{We can determine $x_{n+1,k}$ using the past values from the same feature, $x_{1,k},..., x_{n,k}$ . }
+			\item{We can determine $x_{n+1,k}$ using the past values from all the features $\bar{x}_{1,k},..., \bar{x}_{n,k}$ and $y_1,...,y_n$.}
+		\end{enumerate}
+		}
+	\end{enumerate}
+}
+\end{enumerate}
+
+In the approach $i.$, only the values of one feature are used to predict the value of that feature, i.e. in order to predict $x_{n+1,i}$ only 
+the values $x_{1,i},..., x_{n,i}$ will be used. 
+
+This approach will be performed by using and/or adapting the techniques used in time series prediction. Here we need to find the technique 
+that best deals with data that might not be numeric. This approach does not take into account the complex nature between features. 
+
+On the approach $ii.$, all the features and eventually also the class are used when predicting each feature value. This approach will be 
+performed using core data mining techniques, like decision trees and SVM, which capture the dependence relations between features.
+
+These two approaches, described above, will work as baseline for comparison with the rest of the work. Where one represents the use of 
+time but lacks in capturing the intrinsic relation between features and another the opposite, while capturing the dependence relation 
+between features misses in the explicit use of time.
+
+Another approach is to develop a representation for $x_{1_k},...,x_{n_k}$ that captures its’ evolution. Using that new representation of the 
+data we can develop a new model that uses the relation between features as well as temporal patterns to correctly classify $y_{n+1}$.

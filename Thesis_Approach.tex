@@ -1,189 +1,41 @@
 \chapter{Approach}
 \label{chapter:approach}
 
-Classification is the problem of determining to which of a group of categories an observation belongs to. 
-Formally you can represent the classification problem as finding the correct class $y$  using the observation
- features $\bar{x}$ in the pair $(\bar{x},y)$, where $\bar{x}$ is the feature vector and $y$ the class.
 
-\begin{equation}
-	\bar{x} = < x_1,x_2,...,x_n >
-\label{eq:featurevector}
-\end{equation}
- 
- Applied to the diagnosis/prognosis problem this is what is currently being done, where a model is created to discover
- $y_n$  from $\bar{x}_n$. As already mentioned the difference between a prognostic model and a diagnostic model is just the
- time between the present and the supposed time of $y_n$. 
-
-That is why we are introducing time, the addition of time to the equation turns the pair $(\bar{x},y)$ into the triplet
- $(\bar{x}_i,y_i,t_i )$ where $t_i$ is a timestamp, $\bar{x}_i$ the feature vector in at time $t_i$ and $y_i$ the class also at time $t_i$.
-
- \begin{equation}
-	\bar{x}_i = < x_{i1},x_{i2},...,x_{im} >
-\label{eq:temporalvector}
-\end{equation}
- 
- In this case we have a sequence S of triplets, that is ordered and that can be used to predict a whole new 
- triplet $(\bar{x}_{n+1},y_{n+1},t_{n+1})$.
- 
-  \begin{equation}
-	S= (\bar{x}_1,y_1,t_1 )… (\bar{x}_n,y_n,t_n ) \Rightarrow (\bar{x}_{n+1},y_{n+1},t_{n+1} )
-\label{eq:sequence}
-\end{equation}
-
-Supposing $t_{n+1}$ is known our objective is to find $y_{n+1}$, the class in a future point in time.
-
-In order to find $y_{n+1}$ we propose the following approaches:
-\begin{enumerate}
-\item{ To only find $y_{n+1}$
-
-In this approach $y_{n+1}$ is found just based on the values for the feature vector $\bar{x}$ at each point of time, ignoring the values of $x_{n+1}$
-  and do not trying to estimate them.
-\begin{equation}
-	y_{n+1} = f(x_{i} :1 \leq i \leq n)
-\label{eq:approach1}
-\end{equation}
-  }
-\item{ To find $(\bar{x}_{n+1},y_{n+1})$
-	
-Here  $y_{n+1}$ is found using diagnostic model on the feature vector $\bar{x}_{n+1}$ that, itself is found using various approaches:
-	\begin{enumerate}
-		\item{ $x_{n+1,k}=f(\bar{x}_j:1\leq j \leq n)$
-		\begin{enumerate}
-			\item{We can determine $x_{n+1,k}$ using the past values from the same feature, $x_{1,k},..., x_{n,k}$ . }
-			\item{We can determine $x_{n+1,k}$ using the past values from all the features $\bar{x}_{1,k},..., \bar{x}_{n,k}$ and $y_1,...,y_n$.}
-		\end{enumerate}
-		}
-	\end{enumerate}
-}
-\end{enumerate}
-
-In the approach $i.$, only the values of one feature are used to predict the value of that feature, i.e. in order to predict $x_{n+1,i}$ only 
-the values $x_{1,i},..., x_{n,i}$ will be used. 
-
-This approach will be performed by using and/or adapting the techniques used in time series prediction. Here we need to find the technique 
-that best deals with data that might not be numeric. This approach does not take into account the complex nature between features. 
-
-On the approach $ii.$, all the features and eventually also the class are used when predicting each feature value. This approach will be 
-performed using core data mining techniques, like decision trees and SVM, which capture the dependence relations between features.
-
-These two approaches, described above, will work as baseline for comparison with the rest of the work. Where one represents the use of 
-time but lacks in capturing the intrinsic relation between features and another the opposite, while capturing the dependence relation 
-between features misses in the explicit use of time.
-
-Another approach is to develop a representation for $x_{1_k},...,x_{n_k}$ that captures its’ evolution. Using that new representation of the 
-data we can develop a new model that uses the relation between features as well as temporal patterns to correctly classify $y_{n+1}$.
-
-\section{example}
-\label{section:example}
-
-Let’s assume we have clinical and laboratorial data for a set of patients with Alzheimer’s disease. The data itself could be 
-represented like in \ref{tab:diagnostic}. 
-
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{ccccccc}
-\textbf{Patient ID} & \textbf{Gender} & \textbf{Age} & \textbf{HBP} & \textbf{LBP} & \textbf{Degree of Progression} & \textbf{Time Step} \\ \hline
-25         & M      & 65  & 160 & 88  & 1                     & 0         \\
-25         & M      & 65  & 140 & 90  & 1                     & 1         \\
-25         & M      & 65  & 138 & 85  & 1                     & 2         \\
-25         & M      & 65  & 134 & 81  & 1                     & 3         \\
-25         & M      & 65  & 141 & 88  & 2                     & 4         \\ \hline
-\end{tabular}
-\caption{Table 1}
-\label{tab:diagnostic}
-\end{center}
-\end{table}
- 
-As seen in \ref{tab:diagnostic} we have $N$ time steps of data, in this case 5, we are going to use those in order to perform prognosis. As described
- in the last section we have 2 approaches to doing that, in the first we only use the past values of a feature to predict the future
- value of that feature, that is, for example with the high blood pressure, we can use HBP in times $0,1,2,3,4$ in order to predict $5$, and
- the same for every other feature.
-
-In \ref{tab:approach1} we can see the data what would be used in order to predict HBP at time $5$.
-
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{cccccc}
-\textbf{HBP\_0} & \textbf{HBP\_1} & \textbf{HBP\_2} & \textbf{HBP\_3} & \textbf{HBP\_4} & \textbf{HBP\_5} \\ \hline
-160             & 140             & 138             & 134             & 141             & ?					\\ \hline        
-\end{tabular}
-\caption{Table 2}
-\label{tab:approach1}
-\end{center}
-\end{table} 
-
-The second option we would use every feature value to predict each one. In this case we would use the time steps $0$ to $4$ of every feature, as can be seen in \ref{tab:approach2} to predict
- HBP $5$, as well as every other feature.
- 
- \begin{table}[h]
- \begin{center}
-\begin{tabular}{ccccccccccccc}
-\textbf{Patient ID} & \textbf{Gender} & \textbf{Age\_0} & \textbf{HBP\_0} & \textbf{LBP\_0} & \textbf{Age\_1} & \textbf{HBP\_1} & \textbf{LBP\_1} & \textbf{…} & \textbf{Age\_4} & \textbf{HBP\_4} & \textbf{LBP\_4} & \textbf{HBP\_5} \\ \hline
-25                  & M               & 65              & 160             & 88              & 65              & 140             & 90              &            & 65              & 141             & 88              & ?              \\ \hline
-\end{tabular}
-\caption{Table 3}
-\label{tab:approach2}
-\end{center}
-\end{table}
-
-At the end of this two approached the result is the same, which is a complete data row at time step 5.
-
-Using that predicted data on a diagnostic model that was previously trained on data like in \ref{tab:diagnostic}.
- We would get the final Prognosis.
-\cleardoublepage
- 
-\chapter{Approach2}
-\label{chapter:approach2}
-
-
-\hl{In the medical context, diagnosis is the use of patient’s data, demographic and clinical, in order to understand 
+In the medical context, diagnosis is the use of patient’s data, demographic and clinical, in order to understand 
 and classify the current health condition of a patient \cite{Steyerberg2005}. From a formal point of view, and in the computer-based 
 context, let $A$ be a set of variables (either known as attributes) and $C$ a set of possible classes. Given an instance
  $\bar{x}_i$ described by a set of $m$ variables from $A$, say $\bar{x}_i = (x_{i,1},... ,x_{i,m})$, the goal is to discover the most
- probable value $y_i$, which corresponds to its class or status, with $y_i \in C$, as in \ref{eq:classification}.}
+ probable value $y_i$, which corresponds to its class or status, with $y_i \in C$, as in \ref{eq:classification}.
 
 \begin{equation}
 	\bar{x}_i = (x_{i,1},... ,x_{i,m}) \rightarrow y_i
 \label{eq:classification}
 \end{equation}
 
+In a classification context, this is done in two steps: first by producing a classification model $M_D$, based on a set of known
+ pairs $(x_i, y_i)$ – the training dataset, and second, by applying the discovered model to each instance to classify.
 
-\hl{In a classification context, this is done in two steps: first by producing a classification model $M_D$, based on a set of known
- pairs $(x_i, y_i)$ – the training dataset, and second, by applying the discovered model to each instance to classify.}
-
-\hl{On the other hand, \emph{prognosis} is the foreseeing or prediction of the risk or probability of a certain health event happening,
+On the other hand, \emph{prognosis} is the foreseeing or prediction of the risk or probability of a certain health event happening,
  in the future, using the clinical and non-clinical data. It is the medical prediction of how the pair patient disease is going
- to evolve in a specified period of time.}
+ to evolve in a specified period of time.
 
-\hl{To do this prognosis, a physician will use data that relates the patient to a certain part of the population, i.e. demographic data,
- as well as the patient’s and patient’s family clinical history. This means that the evolution of the patient is important in the
- prediction of his next state. Simply putting, if a patient is showing improvement in a certain factor that is responsible for
- some disease, it is more probable that his prognosis related to that disease is better than if it the patient had the same 
- value but that factor was deteriorating.}
+Considering this, then the prognosis task can be formalized as follows:
 
-\hl{As previously stated, in the process of making a prognosis a physician uses the medical history of a patient. This includes
- the different states a patient has been in the form of various clinical analyses he had done in different points over time.
- The need to use this sequential information shows the utmost importance that time has when predicting someone’s survivability,
- risk of recurrence.}
-
-\hl{Considering all of this, then the prognosis task can be formalized as follows:}
-
-\hl{Let a patient be represented by a sequence of pairs, $(\bar{x}_i^1,y_i^1 ),...,(\bar{x}_i^n,y_i^n )$ , then the goal is to predict
+Let a patient be represented by a sequence of pairs, $(\bar{x}_i^1,y_i^1 ),...,(\bar{x}_i^n,y_i^n )$ , then the goal is to predict
  his $y_i^{n+1}$ value – equation \ref{eq:goal1}. Note that the different values for $y_i^t$ may be observable (available) or non-observable 
- at time instant $t$ for instance $i$.}
-
+ at time instant $t$ for instance $i$.
 
 \begin{equation}
 	(\bar{x}_i^1,y_i^1 ),...,(\bar{x}_i^n,y_i^n ) \rightarrow y_i^{n+1}
 \label{eq:goal1}
 \end{equation}
 
-
 The traditional classification approach has been applied to prognosis with modest success, as seen above. In all described 
-cases, the evolution of single variables was not explored, and actually, the different time instances of their values were
+ cases, the evolution of single variables was not explored, and actually, the different time instances of their values were
  addressed separately, ignoring any possible hidden structure, in the majority of approaches. On the other hand, the analysis 
  of time series is applied to predict the next outcome of a single variable.
-
+ 
 By recognizing that estimation may be used to fill unseen variable outcomes, which in turn may be used to improve classifiers
  accuracy, as in asap classifiers \cite{Antunes2010}, we propose to transform the prognosis into a diagnosis task, by estimating the values
  of the variables that constitute the snapshot in the future point in time.
@@ -194,7 +46,7 @@ Formally, let $A$ be a set of attributes, $C$ be a set of possible classes and $
  described by an ordered set of $n$ observations, the goal is to predict the ${n+1}^{th}$ observation, as in equation \ref{eq:goal}.
 
 \begin{equation}
-	(\bar{x}_i^1,y_i^1 ),...,(\bar{x}_i^n,y_i^n ) \rightarrow y_i^{n+1}
+	(\bar{x}_i^1,y_i^1 ),...,(\bar{x}_i^n,y_i^n ) \rightarrow (\bar{x}_i^{n+1}, y_i^{n+1})
 \label{eq:goal}
 \end{equation}
 
@@ -247,6 +99,8 @@ By receiving a sequence of multi-values, recorded along $n$ observations, multiv
  \section{Algorithm}
  \label{section:algorithm}
  
+  From the previous formulation, the algorithm required to train the new classifier is simple, and is similar for both estimation models.
+ 
 % Insert the algorithm
 \begin{algorithm}
 \caption{Pseudocode for Univariate Estimation training}
@@ -296,5 +150,63 @@ After training the estimation model for each variable, the diagnosis model is le
  $n+1$ and the known class label. Then, the algorithm outputs the model resulting from the composition of the different
  estimators and the diagnosis model learnt from the estimated values (line 22).
 
+\section{Example}
+\label{section:example}
+
+Let’s assume we have clinical and laboratorial data for a set of patients with Alzheimer’s disease. The data itself could be 
+represented like in \ref{tab:diagnostic}. 
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{ccccccc}
+			\textbf{Patient ID} & \textbf{Gender} & \textbf{Age} & \textbf{HBP} & \textbf{LBP} & \textbf{Degree of Progression} & \textbf{Time Step} \\ \hline
+			25         & M      & 65  & 160 & 88  & 1                     & 0         \\
+			25         & M      & 65  & 140 & 90  & 1                     & 1         \\
+			25         & M      & 65  & 138 & 85  & 1                     & 2         \\
+			25         & M      & 65  & 134 & 81  & 1                     & 3         \\
+			25         & M      & 65  & 141 & 88  & 2                     & 4         \\ \hline
+		\end{tabular}
+		\caption{Patient data.}
+		\label{tab:diagnostic}
+	\end{center}
+\end{table}
+
+As seen in \ref{tab:diagnostic} we have $N$ time steps of data, in this case 5, we are going to use those in order to perform prognosis. As described
+in the last section we have 2 approaches to doing that, in the first we only use the past values of a feature to predict the future
+value of that feature, that is, for example with the high blood pressure, we can use HBP in times $0,1,2,3,4$ in order to predict $5$, and
+the same for every other feature.
+
+In \ref{tab:approach1} we can see the data what would be used in order to predict HBP at time $5$.
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{cccccc}
+			\textbf{HBP\_0} & \textbf{HBP\_1} & \textbf{HBP\_2} & \textbf{HBP\_3} & \textbf{HBP\_4} & \textbf{HBP\_5} \\ \hline
+			160             & 140             & 138             & 134             & 141             & ?					\\ \hline        
+		\end{tabular}
+		\caption{Data used on the univariate estimation approach.}
+		\label{tab:approach1}
+	\end{center}
+\end{table} 
+
+The second option we would use every feature value to predict each one. In this case we would use the time steps $0$ to $4$ of every feature, as can be seen in \ref{tab:approach2} to predict
+HBP $5$, as well as every other feature.
+
+\begin{table}[h]
+	
+	\begin{center}
+		\begin{tabular}{ccccccccccccc}
+			\textbf{Patient ID} & \textbf{Gender} & \textbf{Age\_0} & \textbf{HBP\_0} & \textbf{LBP\_0} & \textbf{Age\_1} & \textbf{HBP\_1} & \textbf{LBP\_1} & \textbf{…} & \textbf{Age\_4} & \textbf{HBP\_4} & \textbf{LBP\_4} & \textbf{HBP\_5} \\ \hline
+			25                  & M               & 65              & 160             & 88              & 65              & 140             & 90              &            & 65              & 141             & 88              & ?              \\ \hline
+		\end{tabular}
+		\caption{Data used on the multivariate estimation approach.}
+		\label{tab:approach2}
+	\end{center}
+\end{table}
+
+At the end of this two approached the result is the same, which is a complete data row at time step 5.
+
+Using that predicted data on a diagnostic model that was previously trained on data like in \ref{tab:diagnostic}.
+We would get the final Prognosis.
 
 \cleardoublepage
