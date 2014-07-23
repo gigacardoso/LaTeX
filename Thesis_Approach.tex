@@ -2,9 +2,9 @@
 \label{chapter:approach}
 
 
-In the medical context, diagnosis is the use of patient’s data, demographic and clinical, in order to understand 
+In the medical context, \emph{diagnosis} is the use of patient’s data, demographic and clinical, in order to understand 
 and classify the current health condition of a patient \cite{Steyerberg2005}. From a formal point of view, and in the computer-based 
-context, let $A$ be a set of variables (either known as attributes) and $C$ a set of possible classes. Given an instance
+context, let $A$ be a set of \emph{variables} (either known as \emph{attributes}) and $C$ a set of possible \emph{classes}. Given an instance
  $\bar{x}_i$ described by a set of $m$ variables from $A$, say $\bar{x}_i = (x_{i,1},... ,x_{i,m})$, the goal is to discover the most
  probable value $y_i$, which corresponds to its class or status, with $y_i \in C$, as in \ref{eq:classification}.
 
@@ -14,10 +14,10 @@ context, let $A$ be a set of variables (either known as attributes) and $C$ a se
 \end{equation}
 
 In a classification context, this is done in two steps: first by producing a classification model $M_D$, based on a set of known
- pairs $(x_i, y_i)$ – the training dataset, and second, by applying the discovered model to each instance to classify.
+ pairs $(x_i, y_i)$ – the \emph{training dataset}, and second, by applying the discovered model to each instance to classify.
 
-On the other hand, \emph{prognosis} is the foreseeing or prediction of the risk or probability of a certain health event happening,
- in the future, using the clinical and non-clinical data. It is the medical prediction of how the pair patient disease is going
+On the other hand, \emph{prognosis} is the foreseeing or prediction of the risk or probability of a certain health event happening
+ in the future, using the clinical and non-clinical data. It is the medical prediction of how the pair patient/disease is going
  to evolve in a specified period of time.
 
 Considering this, then the prognosis task can be formalized as follows:
@@ -31,14 +31,16 @@ Let a patient be represented by a sequence of pairs, $(\bar{x}_i^1,y_i^1 ),...,(
 \label{eq:goal1}
 \end{equation}
 
+In this context each $\bar{x}_i^k$ is known as a \emph{snapshot}. In other words, a \emph{snapshot} is all the data that characterizes a 
+patient in one, single, time point. 
+
 The traditional classification approach has been applied to prognosis with modest success, as seen above. In all described 
  cases, the evolution of single variables was not explored, and actually, the different time instances of their values were
  addressed separately, ignoring any possible hidden structure, in the majority of approaches. On the other hand, the analysis 
  of time series is applied to predict the next outcome of a single variable.
  
 By recognizing that estimation may be used to fill unseen variable outcomes, which in turn may be used to improve classifiers
- accuracy, as in asap classifiers \cite{Antunes2010}, we propose to transform the prognosis into a diagnosis task, by estimating the values
- of the variables that constitute the snapshot in the future point in time.
+ accuracy, as in asap classifiers \cite{Antunes2010}. With this purpose, we propose to transform the prognosis into a diagnosis task, by estimating the values of the variables that constitute the snapshot in the future point in time.
 
 Formally, let $A$ be a set of attributes, $C$ be a set of possible classes and $n$ be the number of observations. Let the $t^{th}$ observation,
  described by $m$ variables from $A$, be the pair given by $(\bar{x}_i^t,y_i^t)=(x_{i1}^t,...,x_{im}^t,y_i^t)$ that says that at observation $t$
@@ -76,27 +78,26 @@ In this manner, we propose that an estimation model for a single variable $X_k$,
  the \emph{multivariate-based estimations}.
 
 A \emph{\underline{u}ni\underline{v}ariate-based model} for variable $X_k\space(UvE)$ is a function from a sequence of $n$
- values of $X_k$ to its next value, $x_k^{n+1}$, as
- in equation \ref{eq:uve}, where $Dom_{Xk}$ represents the domain of variable $X_k$. These models only explore the individual values of a 
- variable, ignoring any influence from other variables.
- 
-\begin{eqnarray}
-	M_{UvEk}:[Dom_{Xk}]^n \rightarrow Dom_{Xk}        \\ \label{eq:uve}
-	M_{UvEk}(x_k^1 \space...\space x_k^n) = x_k^{n+1} \nonumber
-\end{eqnarray}
+ values of $X_k$ to its next value, $x_k^{n+1}$, as in equation \ref{eq:uve}, where $Dom_{Xk}$ represents the domain of variable $X_k$. These models only explore the individual values of a variable, ignoring any influence from other variables.
+
+\begin{align} \label{eq:uve}
+M_{UvEk}:[Dom_{Xk}]^n \rightarrow Dom_{Xk} \nonumber \\
+M_{UvEk}(x_k^1 \space...\space x_k^n) = x_k^{n+1}
+\end{align}
+
 
 On the counterpart, a \emph{\underline{m}ulti\underline{v}ariate-based model} for variable $X_k \space (MvE)$ is a function from a sequence 
 of $n$ vectors of $m$ variables, including $X_k$, to its next value, $x_k^{n+1}$ – see equation \ref{eq:mve}.
 
-\begin{eqnarray}
-	M_{MvEk}:[Dom_{X1} \times ... \times Dom_{Xm}]^n \rightarrow Dom_{Xk}  \\ \label{eq:mve}
-	M_{MvEk}(\bar{x}^1 \space...\space \bar{x}^n) = x_k^{n+1} \nonumber
-\end{eqnarray}
+\begin{align} \label{eq:mve}
+M_{MvEk}:[Dom_{X1} \times ... \times Dom_{Xm}]^n \rightarrow Dom_{Xk} \nonumber \\
+M_{MvEk}(\bar{x}^1 \space...\space \bar{x}^n) = x_k^{n+1}
+\end{align}
 
 By receiving a sequence of multi-values, recorded along $n$ observations, multivariate estimator is able to contemplate the interdependencies
  among the different values, and having more informed inputs, is expected to output better estimations.
  
- \section{Algorithm}
+ \section{Estimation Algorithm}
  \label{section:algorithm}
  
   From the previous formulation, the algorithm required to train the new classifier is simple, and is similar for both estimation models.
@@ -106,9 +107,10 @@ By receiving a sequence of multi-values, recorded along $n$ observations, multiv
 \caption{Pseudocode for Univariate Estimation training}
 \label{alg:uve}
 \begin{algorithmic}[1]
-\Procedure{UnivariateEstimation}{Dataset $D$, Function $alg_{class}$, int $\rho$}
+\Procedure{UnivariateEstimation}{Dataset $D$, Function $alg_{estim}$, Function $alg_{class}$, int $\rho$}
 	\State $// D$ – the training dataset with
 	\State $// \qquad\qquad\qquad D = \{(\bar{x}_i^t,y_i^t ): \forall i,t:1 \leq i \leq |D| \wedge 1 \leq t \leq n\} $
+	\State $// alg_{estim}$ – the estimation algorithm
 	\State $// alg_{class}$ – the training algorithm
 	\State $// \rho$ – the number of observations to use
     \State $A \leftarrow \{$the set of attributes describing $D\}$
@@ -116,7 +118,7 @@ By receiving a sequence of multi-values, recorded along $n$ observations, multiv
 	\State $//$ Training each estimation model
     \For {each variable $X_k$ in $A$}
         \State $D_k \leftarrow \pi_{Xk} (D) = \{(x_{ik}^{n-\rho},...,x_{ik}^n ): \forall \bar{x}_i \in D\} $
-		\State $M_{Ek} \leftarrow alg_{class}(D_k) $
+		\State $M_{Ek} \leftarrow alg_{estim}(D_k) $
 	\EndFor
 	\Statex
 	\State $//$ Estimating n+1 snapshot
@@ -137,24 +139,75 @@ By receiving a sequence of multi-values, recorded along $n$ observations, multiv
 \end{algorithmic}
 \end{algorithm}
 
+% Insert the algorithm
+\begin{algorithm}
+	\caption{Pseudocode for Multivariate Estimation training}
+	\label{alg:mve}
+	\begin{algorithmic}[1]
+		\Procedure{MultivariateEstimation}{Dataset $D$, Function $alg_{estim}$, Function $alg_{class}$, int $\rho$}
+		\State $// D$ – the training dataset with
+		\State $// \qquad\qquad\qquad D = \{(\bar{x}_i^t,y_i^t ): \forall i,t:1 \leq i \leq |D| \wedge 1 \leq t \leq n\} $
+		\State $// alg_{estim}$ – the estimation algorithm
+		\State $// alg_{class}$ – the training algorithm
+		\State $// \rho$ – the number of observations to use
+		\State $A \leftarrow \{$the set of attributes describing $D\}$
+		\Statex
+		\State $//$ Training each estimation model
+		\For {each variable $X_k$ in $A$}
+		\State $D_k \leftarrow \pi_{Xk} (D) = \{(\bar{x}_{i}^{n-\rho},...,\bar{x}_{i}^n ): \forall \bar{x}_i \in D\} $ \label{alg:line:estimation_model}
+		\State $M_{Ek} \leftarrow alg_{estim}(D_k) $
+		\EndFor
+		\Statex
+		\State $//$ Estimating n+1 snapshot
+		\For {each variable $X_i$ in $D$}
+		\For {each variable $X_k$ in $A$}
+		\State $x_{ik}^{n+1} \leftarrow M_{Ek} (\bar{x}_{i}^{n-\rho},...,\bar{x}_{i}^n)$
+		\State $ D^{n+1} \leftarrow D^{n+1} \cup \{(x_{i1}^{n+1},...,x_{im}^{n+1},y_i^{n+1} )\}$
+		\EndFor
+		\EndFor
+		\Statex
+		\State $//$ Train the diagnosis model
+		\State $M_D \leftarrow  alg_{class}(D^{n+1})$
+		\Statex
+		\State $//$ Output the composition of models
+		\State Return $M_D \circ (M_{E1},...,M_{Ek})$ \label{alg:line:return}
+		\EndProcedure 
+		\Statex
+	\end{algorithmic}
+\end{algorithm}
+
 Note, that the dataset has to be composed of records containing $n$ snapshots, as described before, and $\rho$ has to be less or equal to $n$. 
 In terms of the classification training algorithm, it should be any tabular one, like a decision tree learner, an algorithm for
  training neural networks or just naïve Bayes.
 
-The difference between the models is on the creation of the estimation models (line 9), in particular on the creation of the 
-training dataset for each variable. While for univariate model, it consists on the projection of $D$ in relation to each $X_k$, the 
-multivariate model uses the entire set of variables. In both cases, $\rho$ corresponds to the number of snapshots to keep in the dataset.
- Since, it is usual that the instants more significant for determining the next value are the previous ones, only the last $\rho$ snapshots are used.
+The difference between the \emph{UvE} and \emph{MvE} models is on the creation of the estimation models (line \ref{alg:line:estimation_model}), in particular on the creation of the training dataset for each variable. While for the univariate model , Algorithm \ref{alg:uve}, it consists on the projection of $D$ in relation to each $X_k$, the multivariate model, Algorithm \ref{alg:mve}, uses the entire set of variables. In other words, instead of just using the $k^{th}$ variable values, the entire instances are used. In both cases, $\rho$ corresponds to the number of snapshots to keep in the dataset.  Since, it is usual that the instants more significant for determining the next value are the previous ones, only the last $\rho$ snapshots are used.
 
 After training the estimation model for each variable, the diagnosis model is learnt from the estimated snapshot for instant
  $n+1$ and the known class label. Then, the algorithm outputs the model resulting from the composition of the different
- estimators and the diagnosis model learnt from the estimated values (line 22).
+ estimators and the diagnosis model learnt from the estimated values (line \ref{alg:line:return}).
+
+\section{Implementation Issues}
+\label{section:implementation}
+
+\hl{From the solution presented in the previous section there are few steps that deserve some special attention. }
+
+As it is possible to see in the pseudocode, of both approaches, a few parameters are configurable as arguments of our method. Namely the method to use in the estimation step,$alg_{estim}$, the method to use in the classification step,$alg_{class}$ and the amount of time steps to be used, $\rho$. 
+
+$\rho$ is the amount of time steps to be used, this parameter allows us to easily change the amount to information to be used on each run of the method. In this work, when a smaller amount than the number of steps available is passed to the algorithms the more recent steps are used. For example, if we have 10 time steps, and $\rho = 5$, the data from time steps $5$ through $9$ are taken into account.
+
+$alg_{class}$ is the method that is used to create the Diagnostic model. This parameter can be any classification technique, like Naive Bayes, Decision Trees or Support Vector Machines. In this dissertations we decided to use the techniques whose output is an easily understandable model. This gave us techniques like Decision Trees, Naive Bayes and Logistic Regression. 
+
+$alg_{estim}$ is the method that is used in the estimation step of our solution. This technique is used to estimate the future value of every feature and it can be a various number of techniques. The technique can be chosen based on the characteristics and amount of the data available. For example, in this dissertation we use linear regression for the estimation when the data is numeric and logistic regression when it is nominal. We also try decision trees for the estimation and Hidden Markov Models.
+
+This freedom in the configuration allows for a more generic and adaptive method that can be used on the most various data.
+
+%
 
 \section{Example}
 \label{section:example}
 
 Let’s assume we have clinical and laboratorial data for a set of patients with Alzheimer’s disease. The data itself could be 
-represented like in \ref{tab:diagnostic}. 
+represented like in Table \ref{tab:diagnostic}. 
 
 \begin{table}[h]
 	\begin{center}
@@ -171,12 +224,11 @@ represented like in \ref{tab:diagnostic}.
 	\end{center}
 \end{table}
 
-As seen in \ref{tab:diagnostic} we have $N$ time steps of data, in this case 5, we are going to use those in order to perform prognosis. As described
-in the last section we have 2 approaches to doing that, in the first we only use the past values of a feature to predict the future
-value of that feature, that is, for example with the high blood pressure, we can use HBP in times $0,1,2,3,4$ in order to predict $5$, and
+As seen in Table \ref{tab:diagnostic}, we have $N$ time steps of data, in this case 5, we are going to use those in order to perform prognosis. As described
+in the last section we have two approaches for doing that: in the first, we only use the past values of a feature to predict its future, that is, for example with the high blood pressure, we can use HBP at times $0,1,2,3,4$ in order to predict it at instant $5$, and
 the same for every other feature.
 
-In \ref{tab:approach1} we can see the data what would be used in order to predict HBP at time $5$.
+In Table \ref{tab:approach1} we can see the data to be used in order to predict HBP at instant $5$.
 
 \begin{table}[h]
 	\begin{center}
@@ -189,24 +241,23 @@ In \ref{tab:approach1} we can see the data what would be used in order to predic
 	\end{center}
 \end{table} 
 
-The second option we would use every feature value to predict each one. In this case we would use the time steps $0$ to $4$ of every feature, as can be seen in \ref{tab:approach2} to predict
-HBP $5$, as well as every other feature.
+In the second option, we use every feature value to predict each one. In this case we would use the time steps $0$ to $4$ of every feature, as can be seen in Table \ref{tab:approach2} to predict HBP $5$. And the same for every other feature.
 
 \begin{table}[h]
 	
 	\begin{center}
 		\begin{tabular}{ccccccccccccc}
-			\textbf{Patient ID} & \textbf{Gender} & \textbf{Age\_0} & \textbf{HBP\_0} & \textbf{LBP\_0} & \textbf{Age\_1} & \textbf{HBP\_1} & \textbf{LBP\_1} & \textbf{…} & \textbf{Age\_4} & \textbf{HBP\_4} & \textbf{LBP\_4} & \textbf{HBP\_5} \\ \hline
-			25                  & M               & 65              & 160             & 88              & 65              & 140             & 90              &            & 65              & 141             & 88              & ?              \\ \hline
+			\textbf{Patient ID} & \textbf{Gender} & \textbf{Age\_0} & \textbf{HBP\_0} & \textbf{LBP\_0} & \textbf{…} & \textbf{Age\_4} & \textbf{HBP\_4} & \textbf{LBP\_4} & \textbf{HBP\_5} \\ \hline
+			25                  & M               & 65              & 160             & 88      &            & 65              & 141             & 88              & ?              \\ \hline
 		\end{tabular}
 		\caption{Data used on the multivariate estimation approach.}
 		\label{tab:approach2}
 	\end{center}
 \end{table}
 
-At the end of this two approached the result is the same, which is a complete data row at time step 5.
+At the end of both approaches the result is the same, which is a complete snapshot at time step 5.
 
-Using that predicted data on a diagnostic model that was previously trained on data like in \ref{tab:diagnostic}.
-We would get the final Prognosis.
+Using that predicted data on a diagnostic model that was previously trained on data (like in Table \ref{tab:diagnostic}).
+We would get the final prognosis.
 
 \cleardoublepage

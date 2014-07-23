@@ -24,20 +24,20 @@
 \BOOKMARK [1][-]{section.3.7}{3.7 Critical Analysis}{chapter.3}% 24
 \BOOKMARK [2][-]{subsection.3.7.1}{3.7.1 Challenges in using classification for prognosis}{section.3.7}% 25
 \BOOKMARK [0][-]{chapter.4}{4 Approach}{}% 26
-\BOOKMARK [1][-]{section.4.1}{4.1 Algorithm}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.2}{4.2 Example}{chapter.4}% 28
-\BOOKMARK [0][-]{chapter.5}{5 Validation and Experimental Results}{}% 29
-\BOOKMARK [1][-]{section.5.1}{5.1 Dataset Description}{chapter.5}% 30
-\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 ALS Dataset}{section.5.1}% 31
-\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Hepatitis Dataset}{section.5.1}% 32
-\BOOKMARK [1][-]{section.5.2}{5.2 Validation Techniques}{chapter.5}% 33
-\BOOKMARK [1][-]{section.5.3}{5.3 Experimental Results}{chapter.5}% 34
-\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Experimental Setup}{section.5.3}% 35
-\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Diagnosis Model}{section.5.3}% 36
-\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Regression Techniques}{section.5.3}% 37
-\BOOKMARK [2][-]{subsection.5.3.4}{5.3.4 Decision Tree}{section.5.3}% 38
-\BOOKMARK [2][-]{subsection.5.3.5}{5.3.5 HMM}{section.5.3}% 39
-\BOOKMARK [2][-]{subsection.5.3.6}{5.3.6 Discussion}{section.5.3}% 40
+\BOOKMARK [1][-]{section.4.1}{4.1 Estimation Algorithm}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.2}{4.2 Implementation Issues}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.3}{4.3 Example}{chapter.4}% 29
+\BOOKMARK [0][-]{chapter.5}{5 Validation and Experimental Results}{}% 30
+\BOOKMARK [1][-]{section.5.1}{5.1 Dataset Description}{chapter.5}% 31
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 ALS Dataset}{section.5.1}% 32
+\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Hepatitis Dataset}{section.5.1}% 33
+\BOOKMARK [1][-]{section.5.2}{5.2 Validation Techniques}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.3}{5.3 Experimental Results}{chapter.5}% 35
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Diagnosis Model}{section.5.3}% 36
+\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Regression Techniques}{section.5.3}% 37
+\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Decision Tree}{section.5.3}% 38
+\BOOKMARK [2][-]{subsection.5.3.4}{5.3.4 HMM}{section.5.3}% 39
+\BOOKMARK [2][-]{subsection.5.3.5}{5.3.5 Discussion}{section.5.3}% 40
 \BOOKMARK [0][-]{chapter.6}{6 Conclusions}{}% 41
 \BOOKMARK [1][-]{section.6.1}{6.1 Achievements}{chapter.6}% 42
 \BOOKMARK [1][-]{section.6.2}{6.2 Future Work}{chapter.6}% 43

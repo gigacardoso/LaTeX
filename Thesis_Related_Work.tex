@@ -355,42 +355,39 @@ Again in liver transplant there is this study \cite{Ataide2012}, where the Kapla
  \section{Critical Analysis}
  \label{section:analysis}
  
- What we can see from the status of automated prognosis in the various diseases presented above, is that nowadays it is made without 
- contemplating any temporal information. And it is our opinion that using it may considerably improve the results achieved, since it
+ What we can see from the status of automated prognosis for the various diseases presented above, is that it is usually made without 
+ contemplating any temporal information. And, it is our opinion, that using it may considerably improve the results achieved, since it
  will mimic physicians’ procedures. 
 
 None of the previously presented approaches takes advantage of the evolution of a patient in order to increase its prognostic
- accuracy and when it is used it is in some sort of feature that represents this evolution. The time, as a dimension, is being 
+ accuracy, and when it is used, it is in some sort of feature that represents this evolution. The time, as a dimension, is being 
  over-looked when building a prognostic model and it should be included in the process.
 
-Another disadvantage of the work that has been done is that its results are very data dependent. \cite{Endo2008}
+Another disadvantage of the work that has been done is that its results are data dependent, and even domain dependent \cite{Endo2008}.
  states that there is no best technique to perform overall prognosis and that the result of a technique depends highly on the data 
  being used. In other words there is no general solution that can be used in more than one dataset maintaining their performance.
 
-Another problem that is notable in this review of prognosis work is that there is no evolution or search for improvement with
- only a few of the papers being based and working on improving some earlier work. There is a worry to develop new prediction 
+Another problem identified in this review of prognosis work is that there is no evolution or search for improvement, with
+ just a few of the papers being based and working on improving some earlier work. There is a worry to develop new prediction 
  models before validating the already existing ones.
  
  \subsection{Challenges in using classification for prognosis}
  \label{subsection:difficulties}
  
-One of the major setbacks when trying to perform prognosis, is the fact that the data is, what is called, censored. This means that 
-the value of a feature of the data is only partially known. In our case this feature is the outcome, where, for example, when 
-predicting cancer recurrence we know the value if the cancer has recurred while on the other case, we cannot say with certainty 
-that it won’t recur, just the amount of time that has passed since the cancer was removed. 
-
-This introduces a level of uncertainty in data that needs to be handled by the data mining technique to be used.
+One of the major setbacks when trying to perform prognosis, is the fact that the data is, what is called, \emph{censored}. This means that 
+the value of a feature in the data is only partially known. In our case this feature is the outcome, where, for example, when 
+predicting cancer recurrence, we know the value if the cancer has recurred while on the other case, we cannot say with certainty 
+that it won’t recur, just the amount of time that has passed since the cancer was removed. This introduces a level of uncertainty in data that needs to be handled by data mining techniques.
 
 Other difficulty when performing prognosis using classification is finding the correct dataset to train the model. The data
  should be from a cohort study, what enables better measurements of the features and helps to keep track on the outcome.
 
-Also given the characteristics of the task in hand, difference between patients, using one predictor (or feature) is rarely 
-descriptive enough to help. Doctors use a various amount of features about patients to be able to give a prognosis and so 
-also needs to happen when performing the prognosis computationally. A multivariate approach should be used in order to take
- into account the relations between features when developing the best prognostic model.
-
-Features, also called predictors, can be data from the patient’s demographic (age, gender, etc.), clinical history, physical 
-tests, and disease characteristics. They should be well defined and, so they could be used in real clinical situations.
+Also given the characteristics of the task at hand, difference between patients, using one predictor (or feature) is rarely 
+descriptive enough to help. Doctors use several/a set of features about patients to be able to give a prognosis, and so 
+also needs to happen when performing the prognosis computationally. As in medical prognosis, a multivariate approach should
+ be used, by computer-bases systems, in order to take into account the relations between features. Features, also called
+  predictors, can be data from the patient’s demographic (age, gender, etc.), clinical history, physical tests, and
+   disease characteristics. They should be well defined and, so they could be used in real clinical situations.
 
 
 
