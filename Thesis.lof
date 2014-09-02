@@ -34,20 +34,25 @@
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Impact of the number of observation on prognosis models.}}{34}{figure.5.10}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS - linear regression estimations}}}{34}{figure.5.10}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis - logistic regression estimations}}}{34}{figure.5.10}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Impact of the number of observations on the accuracy of the decision tree estimation models for each variable using both univariate and multivariate models.}}{35}{figure.5.11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{35}{figure.5.11}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{35}{figure.5.11}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Execution time of feature estimation in the hepatitis dataset using Decision Trees.}}{35}{figure.5.12}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Estimation Time}}}{35}{figure.5.12}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total Estimation Time}}}{35}{figure.5.12}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Accuracy of different models using the decision trees estimations.}}{36}{figure.5.13}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Impact of the number of observation on prognosis models using the decision trees estimations.}}{36}{figure.5.14}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Impact of the number of observations on the accuracy of the HMM estimation models for each variable using both univariate and multivariate models.}}{37}{figure.5.15}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{37}{figure.5.15}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{37}{figure.5.15}
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Execution time of feature estimation in the hepatitis dataset using HMMs.}}{37}{figure.5.16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Estimation Time}}}{37}{figure.5.16}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total Estimation Time}}}{37}{figure.5.16}
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Accuracy of different models using the HMM estimations.}}{38}{figure.5.17}
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Impact of the number of observation on prognosis models using the decision trees estimations.}}{38}{figure.5.18}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Different metrics for the overall prognosis using logistic regression on the Hepatitis dataset.}}{35}{figure.5.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sensitivity}}}{35}{figure.5.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Specificity}}}{35}{figure.5.11}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Precision}}}{35}{figure.5.11}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {F-Measure}}}{35}{figure.5.11}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Impact of the number of observations on the accuracy of the decision tree estimation models for each variable using both univariate and multivariate models.}}{36}{figure.5.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{36}{figure.5.12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{36}{figure.5.12}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Execution time of feature estimation in the hepatitis dataset using Decision Trees.}}{36}{figure.5.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Estimation Time}}}{36}{figure.5.13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total Estimation Time}}}{36}{figure.5.13}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Accuracy of different models using the decision trees estimations.}}{37}{figure.5.14}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Impact of the number of observation on prognosis models using the decision trees estimations.}}{37}{figure.5.15}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Impact of the number of observations on the accuracy of the HMM estimation models for each variable using both univariate and multivariate models.}}{38}{figure.5.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{38}{figure.5.16}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{38}{figure.5.16}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Execution time of feature estimation in the hepatitis dataset using HMMs.}}{38}{figure.5.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Estimation Time}}}{38}{figure.5.17}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total Estimation Time}}}{38}{figure.5.17}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Accuracy of different models using the HMM estimations.}}{39}{figure.5.18}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Impact of the number of observation on prognosis models using the decision trees estimations.}}{39}{figure.5.19}
 \addvspace {10\p@ }

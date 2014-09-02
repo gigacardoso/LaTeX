@@ -45,7 +45,7 @@
 \contentsline {subsection}{\numberline {5.3.4}HMM}{35}{subsection.5.3.4}
 \contentsline {subsubsection}{Estimation Models}{36}{section*.12}
 \contentsline {subsubsection}{Prognosis Results}{37}{section*.13}
-\contentsline {subsection}{\numberline {5.3.5}Discussion}{38}{subsection.5.3.5}
+\contentsline {subsection}{\numberline {5.3.5}Discussion}{37}{subsection.5.3.5}
 \contentsline {chapter}{\numberline {6}Conclusions}{41}{chapter.6}
 \contentsline {section}{\numberline {6.1}Achievements}{41}{section.6.1}
 \contentsline {section}{\numberline {6.2}Future Work}{42}{section.6.2}
