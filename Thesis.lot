@@ -7,5 +7,10 @@
 \contentsline {table}{\numberline {4.2}{\ignorespaces Data used on the univariate estimation approach.}}{26}{table.4.2}
 \contentsline {table}{\numberline {4.3}{\ignorespaces Data used on the multivariate estimation approach.}}{26}{table.4.3}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Notations in a binary contingency table. Color coding indicates correct (green) and incorrect (pink) rates or counts in the contingency table.}}{29}{table.5.1}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Discretization for both Blood Pressure features.}}{28}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Discretization for the Pulse feature.}}{28}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Discretization for the Respiratory Rate features.}}{29}{table.5.3}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Discretization for Percentage of Normal feature.}}{29}{table.5.4}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Discretization for the Temperature feature.}}{30}{table.5.5}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Notations in a binary contingency table. Color coding indicates correct (green) and incorrect (pink) rates or counts in the contingency table.}}{31}{table.5.6}
 \addvspace {10\p@ }

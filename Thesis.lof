@@ -9,50 +9,71 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Class distribution of the ALS dataset.}}{28}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Class distribution of the Hepatitis dataset.}}{28}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces BaselineSingleObs accuracy (several classifiers and number of observations).}}{31}{figure.5.3}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS}}}{31}{figure.5.3}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis}}}{31}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces BaselineMultipleObs accuracy (several classifiers and number of observations).}}{31}{figure.5.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS}}}{31}{figure.5.4}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis}}}{31}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Impact of the number of observations on the accuracy of the linear regression estimation models for each variable, in the ALS dataset.}}{32}{figure.5.5}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{32}{figure.5.5}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{32}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Impact of the number of observations on the accuracy of the logistic regression estimation models for each variable, in the hepatitis dataset.}}{32}{figure.5.6}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{32}{figure.5.6}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{32}{figure.5.6}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Execution time of feature estimation in the ALS dataset using Linear Regression.}}{33}{figure.5.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Estimation Time}}}{33}{figure.5.7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total Estimation Time}}}{33}{figure.5.7}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Execution time of feature estimation in the hepatitis dataset using Logistic Regression.}}{33}{figure.5.8}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Estimation Time}}}{33}{figure.5.8}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total Estimation Time}}}{33}{figure.5.8}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Accuracy of different models.}}{34}{figure.5.9}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS - linear regression estimations}}}{34}{figure.5.9}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis - logistic regression estimations}}}{34}{figure.5.9}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Impact of the number of observation on prognosis models.}}{34}{figure.5.10}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS - linear regression estimations}}}{34}{figure.5.10}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis - logistic regression estimations}}}{34}{figure.5.10}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Different metrics for the overall prognosis using logistic regression on the Hepatitis dataset.}}{35}{figure.5.11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sensitivity}}}{35}{figure.5.11}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Specificity}}}{35}{figure.5.11}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Precision}}}{35}{figure.5.11}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {F-Measure}}}{35}{figure.5.11}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Impact of the number of observations on the accuracy of the decision tree estimation models for each variable using both univariate and multivariate models.}}{36}{figure.5.12}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{36}{figure.5.12}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{36}{figure.5.12}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Execution time of feature estimation in the hepatitis dataset using Decision Trees.}}{36}{figure.5.13}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Estimation Time}}}{36}{figure.5.13}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total Estimation Time}}}{36}{figure.5.13}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Accuracy of different models using the decision trees estimations.}}{37}{figure.5.14}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Impact of the number of observation on prognosis models using the decision trees estimations.}}{37}{figure.5.15}
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Impact of the number of observations on the accuracy of the HMM estimation models for each variable using both univariate and multivariate models.}}{38}{figure.5.16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{38}{figure.5.16}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{38}{figure.5.16}
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Execution time of feature estimation in the hepatitis dataset using HMMs.}}{38}{figure.5.17}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Estimation Time}}}{38}{figure.5.17}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total Estimation Time}}}{38}{figure.5.17}
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Accuracy of different models using the HMM estimations.}}{39}{figure.5.18}
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Impact of the number of observation on prognosis models using the decision trees estimations.}}{39}{figure.5.19}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Discretization for the Weight feature.}}{30}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Class distribution of the Hepatitis dataset.}}{31}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces BaselineSingleObs accuracy (several classifiers and number of observations).}}{32}{figure.5.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS}}}{32}{figure.5.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis}}}{32}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces BaselineMultipleObs accuracy (several classifiers and number of observations).}}{32}{figure.5.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS}}}{32}{figure.5.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis}}}{32}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Impact of the number of observations on the accuracy of the linear regression estimation models for each variable, in the ALS dataset.}}{33}{figure.5.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{33}{figure.5.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{33}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Impact of the number of observations on the accuracy of the logistic regression estimation models for each variable, in the hepatitis dataset.}}{34}{figure.5.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{34}{figure.5.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{34}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Execution time of feature estimation in the ALS dataset using Linear Regression.}}{34}{figure.5.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Estimation Time}}}{34}{figure.5.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total Estimation Time}}}{34}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Execution time of feature estimation in the hepatitis dataset using Logistic Regression.}}{35}{figure.5.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Estimation Time}}}{35}{figure.5.9}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total Estimation Time}}}{35}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Accuracy of different models.}}{35}{figure.5.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS - linear regression estimations}}}{35}{figure.5.10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis - logistic regression estimations}}}{35}{figure.5.10}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Impact of the number of observation on prognosis models.}}{36}{figure.5.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS - linear regression estimations}}}{36}{figure.5.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis - logistic regression estimations}}}{36}{figure.5.11}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Different metrics for the overall prognosis using logistic regression on the Hepatitis dataset.}}{37}{figure.5.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation - ALS}}}{37}{figure.5.12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation - ALS}}}{37}{figure.5.12}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Univariate Estimation - Hepatitis}}}{37}{figure.5.12}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Multivariate Estimation - Hepatitis}}}{37}{figure.5.12}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Impact of the number of observations on the accuracy of the decision tree estimation models for each variable using both univariate and multivariate models on the discrete ALS dataset.}}{38}{figure.5.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{38}{figure.5.13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{38}{figure.5.13}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Impact of the number of observations on the accuracy of the decision tree estimation models for each variable using both univariate and multivariate models on the Hepatitis dataset.}}{38}{figure.5.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{38}{figure.5.14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{38}{figure.5.14}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Execution time of feature estimation in the hepatitis dataset using Decision Trees.}}{39}{figure.5.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Estimation Time}}}{39}{figure.5.15}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total Estimation Time}}}{39}{figure.5.15}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Execution time of feature estimation in the hepatitis dataset using Decision Trees.}}{39}{figure.5.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Estimation Time}}}{39}{figure.5.16}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total Estimation Time}}}{39}{figure.5.16}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Accuracy of different models using the decision trees estimations.}}{40}{figure.5.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS - accuracy using decision tree estimations}}}{40}{figure.5.17}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis - accuracy using decision tree estimations}}}{40}{figure.5.17}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Impact of the number of observation on prognosis models using the decision trees estimations.}}{40}{figure.5.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS - accuracy using decision tree estimations}}}{40}{figure.5.18}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis - accuracy using decision tree estimations}}}{40}{figure.5.18}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Impact of the number of observations on the accuracy of the HMM estimation models for each variable using both univariate and multivariate models in the ALS dataset.}}{41}{figure.5.19}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{41}{figure.5.19}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{41}{figure.5.19}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Impact of the number of observations on the accuracy of the HMM estimation models for each variable using both univariate and multivariate models in the Hepatitis dataset.}}{41}{figure.5.20}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Univariate Estimation}}}{41}{figure.5.20}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multivariate Estimation}}}{41}{figure.5.20}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Execution time of feature estimation in the ALS dataset using HMMs.}}{42}{figure.5.21}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Estimation Time}}}{42}{figure.5.21}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total Estimation Time}}}{42}{figure.5.21}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Execution time of feature estimation in the hepatitis dataset using HMMs.}}{42}{figure.5.22}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Average Estimation Time}}}{42}{figure.5.22}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total Estimation Time}}}{42}{figure.5.22}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Accuracy of different models using the HMM estimations.}}{43}{figure.5.23}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS - HMM estimations}}}{43}{figure.5.23}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis - HMM estimations}}}{43}{figure.5.23}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Impact of the number of observation on prognosis models using the HMM estimations.}}{43}{figure.5.24}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALS - HMM estimations}}}{43}{figure.5.24}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hepatitis - HMM estimations}}}{43}{figure.5.24}
 \addvspace {10\p@ }

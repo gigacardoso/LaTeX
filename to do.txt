@@ -1,0 +1,5 @@
+f measure ponderada ver se é parecido com a classe: se for relativamente parecida falamos so disso.. se for benefico trocamos para f measure.
+
+no fim do capitulo. 
+analise por classe da sensibilidade especificidade, de so duas tecnicas melhor e pior. 
+

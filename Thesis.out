@@ -30,15 +30,16 @@
 \BOOKMARK [0][-]{chapter.5}{5 Validation and Experimental Results}{}% 30
 \BOOKMARK [1][-]{section.5.1}{5.1 Dataset Description}{chapter.5}% 31
 \BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 ALS Dataset}{section.5.1}% 32
-\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Hepatitis Dataset}{section.5.1}% 33
-\BOOKMARK [1][-]{section.5.2}{5.2 Validation Techniques}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.3}{5.3 Experimental Results}{chapter.5}% 35
-\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Diagnosis Model}{section.5.3}% 36
-\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Regression Techniques}{section.5.3}% 37
-\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Decision Tree}{section.5.3}% 38
-\BOOKMARK [2][-]{subsection.5.3.4}{5.3.4 HMM}{section.5.3}% 39
-\BOOKMARK [2][-]{subsection.5.3.5}{5.3.5 Discussion}{section.5.3}% 40
-\BOOKMARK [0][-]{chapter.6}{6 Conclusions}{}% 41
-\BOOKMARK [1][-]{section.6.1}{6.1 Achievements}{chapter.6}% 42
-\BOOKMARK [1][-]{section.6.2}{6.2 Future Work}{chapter.6}% 43
-\BOOKMARK [0][-]{chapter*.14}{Bibliography}{}% 44
+\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Discret ALS Dataset}{section.5.1}% 33
+\BOOKMARK [2][-]{subsection.5.1.3}{5.1.3 Hepatitis Dataset}{section.5.1}% 34
+\BOOKMARK [1][-]{section.5.2}{5.2 Validation Techniques}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.3}{5.3 Experimental Results}{chapter.5}% 36
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Diagnosis Model}{section.5.3}% 37
+\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Regression Techniques}{section.5.3}% 38
+\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Decision Tree}{section.5.3}% 39
+\BOOKMARK [2][-]{subsection.5.3.4}{5.3.4 HMM}{section.5.3}% 40
+\BOOKMARK [2][-]{subsection.5.3.5}{5.3.5 Discussion}{section.5.3}% 41
+\BOOKMARK [0][-]{chapter.6}{6 Conclusions}{}% 42
+\BOOKMARK [1][-]{section.6.1}{6.1 Achievements}{chapter.6}% 43
+\BOOKMARK [1][-]{section.6.2}{6.2 Future Work}{chapter.6}% 44
+\BOOKMARK [0][-]{chapter*.14}{Bibliography}{}% 45

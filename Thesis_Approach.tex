@@ -191,9 +191,9 @@ After training the estimation model for each variable, the diagnosis model is le
 
 \hl{From the solution presented in the previous section there are few steps that deserve some special attention. }
 
-As it is possible to see in the pseudocode, of both approaches, a few parameters are configurable as arguments of our method. Namely the method to use in the estimation step,$alg_{estim}$, the method to use in the classification step,$alg_{class}$ and the amount of time steps to be used, $\rho$. 
+As it is possible to see in the pseudocode, of both approaches, a few parameters are configurable as arguments of our method. Namely the technique to  be used in the estimation step,$alg_{estim}$, the technique to be used in the classification step,$alg_{class}$ and the amount of time steps to be used, $\rho$. 
 
-$\rho$ is the amount of time steps to be used, this parameter allows us to easily change the amount to information to be used on each run of the method. In this work, when a smaller amount than the number of steps available is passed to the algorithms the more recent steps are used. For example, if we have 10 time steps, and $\rho = 5$, the data from time steps $5$ through $9$ are taken into account.
+$\rho$ is the amount of time steps to be used, this parameter allows us to easily change the amount to information to be used on each run of the method. In this work, when a smaller amount than the number of steps available is passed to the algorithms the more recent steps are used. For example, if we have 10 time steps, and $\rho = 5$, the data from time steps $6$ through $10$ are taken into account.
 
 $alg_{class}$ is the method that is used to create the Diagnostic model. This parameter can be any classification technique, like Naive Bayes, Decision Trees or Support Vector Machines. In this dissertations we decided to use the techniques whose output is an easily understandable model. This gave us techniques like Decision Trees, Naive Bayes and Logistic Regression. 
 

@@ -1,0 +1,91 @@
+Discretization:
+
+Blood Pressure
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{lll}
+\multicolumn{3}{c}{Blood Pressure}                                  \\
+                            & Systolic          & Diastolic         \\
+Normal                      & \textless 120     & \textless 80      \\
+Pre-Hypertension            & 120-139           & 80-89             \\
+High Blood Pressure Stage 1 & 140-159           & 90-99             \\
+High Blood Pressure Stage 2 & 169-179           & 100-109           \\
+Hypertensive Crysis         & \textgreater= 180 & \textgreater= 110
+\end{tabular}
+	\caption{Discretization for both Blood Pressure features.}
+	\label{table:bp}
+	\end{center}
+\end{table}
+
+Pulse
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ll}
+\multicolumn{2}{c}{Pulse}            \\
+Slow (Bradycardia) & \textless 60    \\
+Resting            & 60-100          \\
+Fast (Tachycardia) & \textgreater100
+\end{tabular}
+	\caption{Discretization for the Pulse feature.}
+	\label{table:pulse}
+	\end{center}
+\end{table}
+
+Respiratory Rate
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ll}
+\multicolumn{2}{c}{Respiratory Rate} \\
+Slow           & \textless 12        \\
+Normal         & 12-20               \\
+Fast           & 20-24               \\
+Very Fast      & \textgreater24     
+\end{tabular}
+	\caption{Discretization for the Respiratory Rate features.}
+	\label{table:rr}
+	\end{center}
+\end{table}
+
+% of normal
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ll}
+\multicolumn{2}{c}{\% of Normal}              \\
+Very Low Breathing Capacity & \textless50     \\
+Deteriorating               & 50-80           \\
+Normal                      & 80-100          \\
+Athlete                     & \textgreater100
+\end{tabular}
+	\caption{Discretization for Percentage of Normal feature.}
+	\label{table:percofnormal}
+	\end{center}
+\end{table}
+
+Temperature
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ll}
+\multicolumn{2}{c}{Temperature} \\
+Hypothermia  & \textless36.5    \\
+Normal       & 36.5-37.2        \\
+Fever        & \textgreater37.2
+\end{tabular}
+	\caption{Discretization for the Temperature feature.}
+	\label{table:temp}
+	\end{center}
+\end{table}
+
+BP
+http://www.heart.org/HEARTORG/Conditions/HighBloodPressure/AboutHighBloodPressure/Understanding-Blood-Pressure-Readings_UCM_301764_Article.jsp
+
+Temperature & pulse
+http://www.hopkinsmedicine.org/healthlibrary/conditions/cardiovascular_diseases/vital_signs_body_temperature_pulse_rate_respiration_rate_blood_pressure_85,P00866/
+
+RR
+http://lungcancer.about.com/od/Respiratory-System-Function/a/Normal-Respiratory-Rate.htm
+
+Weight:
+http://www.nhs.uk/Livewell/healthy-living/Pages/height-weight-chart.aspx
+
+% of normal
+Data source

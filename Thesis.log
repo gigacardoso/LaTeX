@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.16)  29 AUG 2014 17:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.16)  2 OCT 2014 12:08
 entering extended mode
 **C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Thesis.tex
 (C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Thesis.tex
@@ -792,7 +792,7 @@ LaTeX Info: Redefining \nameref on input line 75.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 15.
 
-<IST_A_CMYK_POS.pdf, id=177, 845.0471pt x 597.51233pt>
+<IST_A_CMYK_POS.pdf, id=181, 845.0471pt x 597.51233pt>
 File: IST_A_CMYK_POS.pdf Graphic file (type pdf)
 
 <use IST_A_CMYK_POS.pdf>
@@ -802,11 +802,11 @@ LaTeX Font Info:    Try loading font information for T1+phv on input line 26.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+LaTeX Font Info:    Try loading font information for U+msa on input line 44.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 42.
+LaTeX Font Info:    Try loading font information for U+msb on input line 44.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -853,14 +853,12 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <24.88> not available
 ] [14
 
 ]
-(C:\Users\Daniel\Dropbox\Bolsa\Dissertacao\Document\LaTeX\Thesis.lof)
+(C:\Users\Daniel\Dropbox\Bolsa\Dissertacao\Document\LaTeX\Thesis.lof [15
+
+])
 \tf@lof=\write9
- [15
 
-]
-[16
-
-]
+[16]
 (C:\Users\Daniel\Dropbox\Bolsa\Dissertacao\Document\LaTeX\Thesis_Nomenclature.t
 ex)
 No file Thesis.nls.
@@ -876,6 +874,7 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
 
 
 
+
 ] [2])
 (C:\Users\Daniel\Dropbox\Bolsa\Dissertacao\Document\LaTeX\Thesis_DM_HealthCare.
 tex
@@ -886,21 +885,21 @@ Chapter 2.
 ]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 39.
- <Figures/dt.png, id=396, 481.8pt x 230.36063pt>
+ <Figures/dt.png, id=424, 481.8pt x 230.36063pt>
 File: Figures/dt.png Graphic file (type png)
  <use Figures/dt.png>
 Package pdftex.def Info: Figures/dt.png used on input line 51.
 (pdftex.def)             Requested size: 455.24411pt x 217.67084pt.
 
 [4 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/dt.png>]
-<Figures/nn.png, id=412, 376.40625pt x 232.61906pt>
+<Figures/nn.png, id=440, 376.40625pt x 232.61906pt>
 File: Figures/nn.png Graphic file (type png)
  <use Figures/nn.png>
 Package pdftex.def Info: Figures/nn.png used on input line 78.
 (pdftex.def)             Requested size: 455.24411pt x 281.36343pt.
 
 [5 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/nn.png>]
-<Figures/svm.png, id=418, 72.27pt x 71.3064pt>
+<Figures/svm.png, id=446, 72.27pt x 71.3064pt>
 File: Figures/svm.png Graphic file (type png)
  <use Figures/svm.png>
 Package pdftex.def Info: Figures/svm.png used on input line 91.
@@ -932,7 +931,7 @@ Underfull \vbox (badness 4072) has occurred while \output is active []
 
 
 ]
-[10] <Figures/LRvsNN.png, id=465, 286.82156pt x 228.10219pt>
+[10] <Figures/LRvsNN.png, id=493, 286.82156pt x 228.10219pt>
 File: Figures/LRvsNN.png Graphic file (type png)
 
 <use Figures/LRvsNN.png>
@@ -966,265 +965,452 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 (C:\Users\Daniel\Dropbox\Bolsa\Dissertacao\Document\LaTeX\Thesis_Validation_Res
 ults.tex
 Chapter 5.
-<Figures/class_distribution_als.png, id=638, 481.8pt x 290.08376pt>
+<Figures/class_distribution_als.png, id=666, 481.8pt x 290.08376pt>
 File: Figures/class_distribution_als.png Graphic file (type png)
 
 <use Figures/class_distribution_als.png>
 Package pdftex.def Info: Figures/class_distribution_als.png used on input line 
-42.
+41.
 (pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 3138) has occurred while \output is active []
-
- [27
+[27
 
 
 ]
-<Figures/class_distribution_hep.png, id=649, 481.8pt x 290.08376pt>
+LaTeX Font Info:    Try loading font information for OML+phv on input line 60.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlphv.fd"
+File: omlphv.fd 
+)
+LaTeX Font Info:    Font shape `OML/phv/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 60.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/adult_weight_height.png, id=680, 905.63344pt x 1175.14032pt>
+File: Figures/adult_weight_height.png Graphic file (type png)
+
+<use Figures/adult_weight_height.png>
+Package pdftex.def Info: Figures/adult_weight_height.png used on input line 127
+.
+(pdftex.def)             Requested size: 223.07211pt x 289.445pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/class_dis
+tribution_als.png (PNG copy)>]
+<Figures/class_distribution_hep.png, id=690, 481.8pt x 290.08376pt>
 File: Figures/class_distribution_hep.png Graphic file (type png)
 
 <use Figures/class_distribution_hep.png>
 Package pdftex.def Info: Figures/class_distribution_hep.png used on input line 
-63.
+148.
 (pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
- [28 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/class_di
-stribution_als.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Docum
-ent/LaTeX/Figures/class_distribution_hep.png (PNG copy)>] [29]
-<Figures/base_single_als_tree.png, id=670, 481.8pt x 289.08pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[29] [30 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/adul
+t_weight_height.png>] [31 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/L
+aTeX/Figures/class_distribution_hep.png (PNG copy)>]
+<Figures/base_single_als_tree.png, id=715, 481.8pt x 289.08pt>
 File: Figures/base_single_als_tree.png Graphic file (type png)
 
 <use Figures/base_single_als_tree.png>
-Package pdftex.def Info: Figures/base_single_als_tree.png used on input line 16
-8.
+Package pdftex.def Info: Figures/base_single_als_tree.png used on input line 25
+5.
 (pdftex.def)             Requested size: 223.07211pt x 133.84296pt.
 
-<Figures/base_single_h_tree.png, id=671, 481.8pt x 289.08pt>
+<Figures/base_single_h_tree.png, id=716, 481.8pt x 289.08pt>
 File: Figures/base_single_h_tree.png Graphic file (type png)
 
 <use Figures/base_single_h_tree.png>
-Package pdftex.def Info: Figures/base_single_h_tree.png used on input line 169.
+Package pdftex.def Info: Figures/base_single_h_tree.png used on input line 256.
 
 (pdftex.def)             Requested size: 223.07211pt x 133.84296pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/base_multi_als_tree.png, id=672, 481.8pt x 289.08pt>
+<Figures/base_multi_als_tree.png, id=717, 481.8pt x 289.08pt>
 File: Figures/base_multi_als_tree.png Graphic file (type png)
 
 <use Figures/base_multi_als_tree.png>
-Package pdftex.def Info: Figures/base_multi_als_tree.png used on input line 177
+Package pdftex.def Info: Figures/base_multi_als_tree.png used on input line 264
 .
 (pdftex.def)             Requested size: 223.07211pt x 133.84296pt.
 
-<Figures/base_multi_h_tree.png, id=673, 481.8pt x 289.08pt>
+<Figures/base_multi_h_tree.png, id=718, 481.8pt x 289.08pt>
 File: Figures/base_multi_h_tree.png Graphic file (type png)
 
 <use Figures/base_multi_h_tree.png>
-Package pdftex.def Info: Figures/base_multi_h_tree.png used on input line 178.
+Package pdftex.def Info: Figures/base_multi_h_tree.png used on input line 265.
 (pdftex.def)             Requested size: 223.07211pt x 133.84296pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[30] <Figures/estimation_single_als_reg.png, id=683, 481.8pt x 290.08376pt>
-File: Figures/estimation_single_als_reg.png Graphic file (type png)
-
-<use Figures/estimation_single_als_reg.png>
-Package pdftex.def Info: Figures/estimation_single_als_reg.png used on input li
-ne 210.
-(pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
-
-<Figures/estimation_multi_als_reg.png, id=684, 481.8pt x 290.08376pt>
-File: Figures/estimation_multi_als_reg.png Graphic file (type png)
-
-<use Figures/estimation_multi_als_reg.png>
-Package pdftex.def Info: Figures/estimation_multi_als_reg.png used on input lin
-e 211.
-(pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
- [31 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/base_sin
+ [32 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/base_sin
 gle_als_tree.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Documen
 t/LaTeX/Figures/base_single_h_tree.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bol
 sa/Dissertacao/Document/LaTeX/Figures/base_multi_als_tree.png (PNG copy)> <C:/U
 sers/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/base_multi_h_tree.
 png (PNG copy)>]
-<Figures/estimation_single_h_log.png, id=695, 482.80376pt x 290.08376pt>
+<Figures/estimation_single_als_reg.png, id=730, 481.8pt x 289.08pt>
+File: Figures/estimation_single_als_reg.png Graphic file (type png)
+
+<use Figures/estimation_single_als_reg.png>
+Package pdftex.def Info: Figures/estimation_single_als_reg.png used on input li
+ne 296.
+(pdftex.def)             Requested size: 223.07211pt x 133.84296pt.
+
+<Figures/estimation_multi_als_reg.png, id=731, 481.8pt x 289.08pt>
+File: Figures/estimation_multi_als_reg.png Graphic file (type png)
+
+<use Figures/estimation_multi_als_reg.png>
+Package pdftex.def Info: Figures/estimation_multi_als_reg.png used on input lin
+e 297.
+(pdftex.def)             Requested size: 223.07211pt x 133.84296pt.
+
+<Figures/estimation_single_h_log.png, id=733, 481.8pt x 289.08pt>
 File: Figures/estimation_single_h_log.png Graphic file (type png)
 
 <use Figures/estimation_single_h_log.png>
 Package pdftex.def Info: Figures/estimation_single_h_log.png used on input line
- 223.
-(pdftex.def)             Requested size: 223.07211pt x 134.02884pt.
+ 309.
+(pdftex.def)             Requested size: 223.07211pt x 133.84296pt.
 
-<Figures/estimation_multi_h_log.png, id=696, 482.80376pt x 290.08376pt>
+<Figures/estimation_multi_h_log.png, id=734, 481.8pt x 289.08pt>
 File: Figures/estimation_multi_h_log.png Graphic file (type png)
 
 <use Figures/estimation_multi_h_log.png>
 Package pdftex.def Info: Figures/estimation_multi_h_log.png used on input line 
-224.
-(pdftex.def)             Requested size: 223.07211pt x 134.02884pt.
+310.
+(pdftex.def)             Requested size: 223.07211pt x 133.84296pt.
 
-<Figures/time_estimation_average_linear_als.png, id=699, 485.815pt x 290.08376p
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[33 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/estimatio
+n_single_als_reg.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Doc
+ument/LaTeX/Figures/estimation_multi_als_reg.png (PNG copy)>]
+<Figures/time_estimation_average_linear_als.png, id=745, 485.815pt x 290.08376p
 t>
 File: Figures/time_estimation_average_linear_als.png Graphic file (type png)
  <use Figures/time_estimation_average_linear_als.png>
 Package pdftex.def Info: Figures/time_estimation_average_linear_als.png used on
- input line 238.
+ input line 325.
 (pdftex.def)             Requested size: 223.07211pt x 133.19669pt.
 
-<Figures/time_estimation_total_linear_als.png, id=700, 485.815pt x 290.08376pt>
+<Figures/time_estimation_total_linear_als.png, id=746, 485.815pt x 290.08376pt>
 File: Figures/time_estimation_total_linear_als.png Graphic file (type png)
 <use Figures/time_estimation_total_linear_als.png>
 Package pdftex.def Info: Figures/time_estimation_total_linear_als.png used on i
-nput line 239.
+nput line 326.
 (pdftex.def)             Requested size: 223.07211pt x 133.19669pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/time_estimation_average_log_h.png, id=701, 485.815pt x 290.08376pt>
+<Figures/time_estimation_average_log_h.png, id=747, 485.815pt x 290.08376pt>
 File: Figures/time_estimation_average_log_h.png Graphic file (type png)
 
 <use Figures/time_estimation_average_log_h.png>
 Package pdftex.def Info: Figures/time_estimation_average_log_h.png used on inpu
-t line 247.
+t line 334.
 (pdftex.def)             Requested size: 223.07211pt x 133.19669pt.
 
-<Figures/time_estimation_total_log_h.png, id=702, 485.815pt x 290.08376pt>
+<Figures/time_estimation_total_log_h.png, id=748, 485.815pt x 290.08376pt>
 File: Figures/time_estimation_total_log_h.png Graphic file (type png)
 
 <use Figures/time_estimation_total_log_h.png>
 Package pdftex.def Info: Figures/time_estimation_total_log_h.png used on input 
-line 248.
+line 335.
 (pdftex.def)             Requested size: 223.07211pt x 133.19669pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[32 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/estimatio
-n_single_als_reg.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Doc
-ument/LaTeX/Figures/estimation_multi_als_reg.png (PNG copy)> <C:/Users/Daniel/D
-ropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/estimation_single_h_log.png (PN
-G copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/esti
-mation_multi_h_log.png (PNG copy)>]
-<Figures/accuracy_als_reg.png, id=714, 481.8pt x 290.08376pt>
+[34 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/estimatio
+n_single_h_log.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Docum
+ent/LaTeX/Figures/estimation_multi_h_log.png (PNG copy)> <C:/Users/Daniel/Dropb
+ox/Bolsa/Dissertacao/Document/LaTeX/Figures/time_estimation_average_linear_als.
+png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figur
+es/time_estimation_total_linear_als.png (PNG copy)>]
+<Figures/accuracy_als_reg.png, id=760, 481.8pt x 290.08376pt>
 File: Figures/accuracy_als_reg.png Graphic file (type png)
 
 <use Figures/accuracy_als_reg.png>
-Package pdftex.def Info: Figures/accuracy_als_reg.png used on input line 273.
+Package pdftex.def Info: Figures/accuracy_als_reg.png used on input line 354.
 (pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
 
-<Figures/accuracy_h_log.png, id=715, 481.8pt x 290.08376pt>
+<Figures/accuracy_h_log.png, id=761, 481.8pt x 290.08376pt>
 File: Figures/accuracy_h_log.png Graphic file (type png)
 
 <use Figures/accuracy_h_log.png>
-Package pdftex.def Info: Figures/accuracy_h_log.png used on input line 274.
+Package pdftex.def Info: Figures/accuracy_h_log.png used on input line 355.
 (pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/impact_als_reg.png, id=716, 481.8pt x 289.08pt>
+<Figures/impact_als_reg.png, id=762, 482.80376pt x 290.08376pt>
 File: Figures/impact_als_reg.png Graphic file (type png)
 
 <use Figures/impact_als_reg.png>
-Package pdftex.def Info: Figures/impact_als_reg.png used on input line 282.
-(pdftex.def)             Requested size: 223.07211pt x 133.84296pt.
+Package pdftex.def Info: Figures/impact_als_reg.png used on input line 363.
+(pdftex.def)             Requested size: 223.07211pt x 134.02884pt.
 
-<Figures/impact_h_log.png, id=717, 481.8pt x 290.08376pt>
+<Figures/impact_h_log.png, id=763, 481.8pt x 289.08pt>
 File: Figures/impact_h_log.png Graphic file (type png)
 
 <use Figures/impact_h_log.png>
-Package pdftex.def Info: Figures/impact_h_log.png used on input line 283.
-(pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
+Package pdftex.def Info: Figures/impact_h_log.png used on input line 364.
+(pdftex.def)             Requested size: 223.07211pt x 133.84296pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<Figures/metrics/Hepatitis-log-approach1-sensitivity.png, id=718, 481.8pt x 290
-.08376pt>
-File: Figures/metrics/Hepatitis-log-approach1-sensitivity.png Graphic file (typ
-e png)
- <use Figures/metrics/Hepatitis-log-approach1-sensitivity.png>
-Package pdftex.def Info: Figures/metrics/Hepatitis-log-approach1-sensitivity.pn
-g used on input line 291.
+<Figures/metrics/als-reg-approach1-fmeasure.png, id=765, 481.8pt x 290.08376pt>
+File: Figures/metrics/als-reg-approach1-fmeasure.png Graphic file (type png)
+<use Figures/metrics/als-reg-approach1-fmeasure.png>
+Package pdftex.def Info: Figures/metrics/als-reg-approach1-fmeasure.png used on
+ input line 374.
 (pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
 
-<Figures/metrics/Hepatitis-log-approach1-specificity.png, id=719, 481.8pt x 290
-.08376pt>
-File: Figures/metrics/Hepatitis-log-approach1-specificity.png Graphic file (typ
-e png)
- <use Figures/metrics/Hepatitis-log-approach1-specificity.png>
-Package pdftex.def Info: Figures/metrics/Hepatitis-log-approach1-specificity.pn
-g used on input line 292.
+<Figures/metrics/als-reg-approach2-fmeasure.png, id=766, 481.8pt x 290.08376pt>
+File: Figures/metrics/als-reg-approach2-fmeasure.png Graphic file (type png)
+<use Figures/metrics/als-reg-approach2-fmeasure.png>
+Package pdftex.def Info: Figures/metrics/als-reg-approach2-fmeasure.png used on
+ input line 375.
 (pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
 
-<Figures/metrics/Hepatitis-log-approach1-precision.png, id=720, 481.8pt x 290.0
-8376pt>
-File: Figures/metrics/Hepatitis-log-approach1-precision.png Graphic file (type 
-png)
- <use Figures/metrics/Hepatitis-log-approach1-precision.png>
-Package pdftex.def Info: Figures/metrics/Hepatitis-log-approach1-precision.png 
-used on input line 293.
-(pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
-
-<Figures/metrics/Hepatitis-log-approach1-fmeasure.png, id=721, 481.8pt x 290.08
+<Figures/metrics/Hepatitis-log-approach1-fmeasure.png, id=767, 481.8pt x 290.08
 376pt>
 File: Figures/metrics/Hepatitis-log-approach1-fmeasure.png Graphic file (type p
 ng)
  <use Figures/metrics/Hepatitis-log-approach1-fmeasure.png>
 Package pdftex.def Info: Figures/metrics/Hepatitis-log-approach1-fmeasure.png u
-sed on input line 294.
+sed on input line 376.
+(pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
+
+<Figures/metrics/Hepatitis-log-approach2-fmeasure.png, id=768, 481.8pt x 290.08
+376pt>
+File: Figures/metrics/Hepatitis-log-approach2-fmeasure.png Graphic file (type p
+ng)
+ <use Figures/metrics/Hepatitis-log-approach2-fmeasure.png>
+Package pdftex.def Info: Figures/metrics/Hepatitis-log-approach2-fmeasure.png u
+sed on input line 377.
 (pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/time_esti
-mation_average_linear_als.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Disser
-tacao/Document/LaTeX/Figures/time_estimation_total_linear_als.png (PNG copy)> <
-C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/time_estimatio
-n_average_log_h.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Docu
-ment/LaTeX/Figures/time_estimation_total_log_h.png (PNG copy)>]
-<Figures/estimation_single_h_tree.png, id=735, 481.8pt x 289.08pt>
+[35 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/time_esti
+mation_average_log_h.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao
+/Document/LaTeX/Figures/time_estimation_total_log_h.png (PNG copy)> <C:/Users/D
+aniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/accuracy_als_reg.png (PN
+G copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/accu
+racy_h_log.png (PNG copy)>]
+<Figures/estimation_single_als_tree.png, id=782, 486.81876pt x 290.08376pt>
+File: Figures/estimation_single_als_tree.png Graphic file (type png)
+
+<use Figures/estimation_single_als_tree.png>
+Package pdftex.def Info: Figures/estimation_single_als_tree.png used on input l
+ine 398.
+(pdftex.def)             Requested size: 223.07211pt x 132.92226pt.
+
+<Figures/estimation_multi_als_tree.png, id=783, 486.81876pt x 290.08376pt>
+File: Figures/estimation_multi_als_tree.png Graphic file (type png)
+
+<use Figures/estimation_multi_als_tree.png>
+Package pdftex.def Info: Figures/estimation_multi_als_tree.png used on input li
+ne 399.
+(pdftex.def)             Requested size: 223.07211pt x 132.92226pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/estimation_single_h_tree.png, id=784, 481.8pt x 289.08pt>
 File: Figures/estimation_single_h_tree.png Graphic file (type png)
 
 <use Figures/estimation_single_h_tree.png>
 Package pdftex.def Info: Figures/estimation_single_h_tree.png used on input lin
-e 316.
+e 407.
 (pdftex.def)             Requested size: 223.07211pt x 133.84296pt.
 
-<Figures/estimation_multi_h_tree.png, id=736, 481.8pt x 289.08pt>
+<Figures/estimation_multi_h_tree.png, id=785, 481.8pt x 289.08pt>
 File: Figures/estimation_multi_h_tree.png Graphic file (type png)
 
 <use Figures/estimation_multi_h_tree.png>
 Package pdftex.def Info: Figures/estimation_multi_h_tree.png used on input line
- 317.
+ 408.
 (pdftex.def)             Requested size: 223.07211pt x 133.84296pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/time_estimation_average_tree_h.png, id=740, 485.815pt x 290.08376pt>
+
+<Figures/time_estimation_average_tree_als.png, id=791, 485.815pt x 290.08376pt>
+File: Figures/time_estimation_average_tree_als.png Graphic file (type png)
+<use Figures/time_estimation_average_tree_als.png>
+Package pdftex.def Info: Figures/time_estimation_average_tree_als.png used on i
+nput line 430.
+(pdftex.def)             Requested size: 223.07211pt x 133.19669pt.
+
+<Figures/time_estimation_total_tree_als.png, id=792, 485.815pt x 290.08376pt>
+File: Figures/time_estimation_total_tree_als.png Graphic file (type png)
+
+<use Figures/time_estimation_total_tree_als.png>
+Package pdftex.def Info: Figures/time_estimation_total_tree_als.png used on inp
+ut line 431.
+(pdftex.def)             Requested size: 223.07211pt x 133.19669pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/time_estimation_average_tree_h.png, id=793, 485.815pt x 290.08376pt>
 File: Figures/time_estimation_average_tree_h.png Graphic file (type png)
 
 <use Figures/time_estimation_average_tree_h.png>
 Package pdftex.def Info: Figures/time_estimation_average_tree_h.png used on inp
-ut line 336.
+ut line 439.
 (pdftex.def)             Requested size: 223.07211pt x 133.19669pt.
 
-<Figures/time_estimation_total_tree_h.png, id=741, 485.815pt x 290.08376pt>
+<Figures/time_estimation_total_tree_h.png, id=794, 485.815pt x 290.08376pt>
 File: Figures/time_estimation_total_tree_h.png Graphic file (type png)
 
 <use Figures/time_estimation_total_tree_h.png>
 Package pdftex.def Info: Figures/time_estimation_total_tree_h.png used on input
- line 337.
+ line 440.
 (pdftex.def)             Requested size: 223.07211pt x 133.19669pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[36 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/impact_al
+s_reg.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX
+/Figures/impact_h_log.png (PNG copy)>]
+<Figures/accuracy_als_tree.png, id=805, 486.81876pt x 290.08376pt>
+File: Figures/accuracy_als_tree.png Graphic file (type png)
+
+<use Figures/accuracy_als_tree.png>
+Package pdftex.def Info: Figures/accuracy_als_tree.png used on input line 460.
+(pdftex.def)             Requested size: 223.07211pt x 132.92226pt.
+
+<Figures/accuracy_h_tree.png, id=806, 481.8pt x 290.08376pt>
+File: Figures/accuracy_h_tree.png Graphic file (type png)
+
+<use Figures/accuracy_h_tree.png>
+Package pdftex.def Info: Figures/accuracy_h_tree.png used on input line 461.
+(pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/impact_als_tree.png, id=807, 486.81876pt x 290.08376pt>
+File: Figures/impact_als_tree.png Graphic file (type png)
+
+<use Figures/impact_als_tree.png>
+Package pdftex.def Info: Figures/impact_als_tree.png used on input line 469.
+(pdftex.def)             Requested size: 223.07211pt x 132.92226pt.
+
+<Figures/impact_h_tree.png, id=808, 482.80376pt x 290.08376pt>
+File: Figures/impact_h_tree.png Graphic file (type png)
+
+<use Figures/impact_h_tree.png>
+Package pdftex.def Info: Figures/impact_h_tree.png used on input line 470.
+(pdftex.def)             Requested size: 223.07211pt x 134.02884pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[37 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/metrics/a
+ls-reg-approach1-fmeasure.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Disser
+tacao/Document/LaTeX/Figures/metrics/als-reg-approach2-fmeasure.png (PNG copy)>
+ <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/metrics/Hepa
+titis-log-approach1-fmeasure.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dis
+sertacao/Document/LaTeX/Figures/metrics/Hepatitis-log-approach2-fmeasure.png (P
+NG copy)>]
+<Figures/estimation_single_als_hmm.png, id=819, 486.81876pt x 290.08376pt>
+File: Figures/estimation_single_als_hmm.png Graphic file (type png)
+
+<use Figures/estimation_single_als_hmm.png>
+Package pdftex.def Info: Figures/estimation_single_als_hmm.png used on input li
+ne 501.
+(pdftex.def)             Requested size: 223.07211pt x 132.92226pt.
+
+<Figures/estimation_multi_als_hmm.png, id=820, 486.81876pt x 290.08376pt>
+File: Figures/estimation_multi_als_hmm.png Graphic file (type png)
+
+<use Figures/estimation_multi_als_hmm.png>
+Package pdftex.def Info: Figures/estimation_multi_als_hmm.png used on input lin
+e 502.
+(pdftex.def)             Requested size: 223.07211pt x 132.92226pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/estimation_single_h_hmm.png, id=821, 484.81125pt x 290.08376pt>
+File: Figures/estimation_single_h_hmm.png Graphic file (type png)
+
+<use Figures/estimation_single_h_hmm.png>
+Package pdftex.def Info: Figures/estimation_single_h_hmm.png used on input line
+ 510.
+(pdftex.def)             Requested size: 223.07211pt x 133.47556pt.
+
+<Figures/estimation_multi_h_hmm.png, id=822, 484.81125pt x 290.08376pt>
+File: Figures/estimation_multi_h_hmm.png Graphic file (type png)
+
+<use Figures/estimation_multi_h_hmm.png>
+Package pdftex.def Info: Figures/estimation_multi_h_hmm.png used on input line 
+511.
+(pdftex.def)             Requested size: 223.07211pt x 133.47556pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[38 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/estimatio
+n_single_als_tree.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Do
+cument/LaTeX/Figures/estimation_multi_als_tree.png (PNG copy)> <C:/Users/Daniel
+/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/estimation_single_h_tree.png 
+(PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/e
+stimation_multi_h_tree.png (PNG copy)>]
+<Figures/time_estimation_average_hmm_als.png, id=838, 485.815pt x 290.08376pt>
+File: Figures/time_estimation_average_hmm_als.png Graphic file (type png)
+
+<use Figures/time_estimation_average_hmm_als.png>
+Package pdftex.def Info: Figures/time_estimation_average_hmm_als.png used on in
+put line 530.
+(pdftex.def)             Requested size: 223.07211pt x 133.19669pt.
+
+<Figures/time_estimation_total_hmm_als.png, id=839, 485.815pt x 290.08376pt>
+File: Figures/time_estimation_total_hmm_als.png Graphic file (type png)
+
+<use Figures/time_estimation_total_hmm_als.png>
+Package pdftex.def Info: Figures/time_estimation_total_hmm_als.png used on inpu
+t line 531.
+(pdftex.def)             Requested size: 223.07211pt x 133.19669pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/time_estimation_average_hmm_h.png, id=840, 481.8pt x 290.08376pt>
+File: Figures/time_estimation_average_hmm_h.png Graphic file (type png)
+
+<use Figures/time_estimation_average_hmm_h.png>
+Package pdftex.def Info: Figures/time_estimation_average_hmm_h.png used on inpu
+t line 539.
+(pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
+
+<Figures/time_estimation_total_hmm_h.png, id=841, 481.8pt x 290.08376pt>
+File: Figures/time_estimation_total_hmm_h.png Graphic file (type png)
+
+<use Figures/time_estimation_total_hmm_h.png>
+Package pdftex.def Info: Figures/time_estimation_total_hmm_h.png used on input 
+line 540.
+(pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1232,113 +1418,68 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/accuracy
-_als_reg.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/La
-TeX/Figures/accuracy_h_log.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Disse
-rtacao/Document/LaTeX/Figures/impact_als_reg.png (PNG copy)> <C:/Users/Daniel/D
-ropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/impact_h_log.png (PNG copy)>]
-<Figures/accuracy_h_tree.png, id=755, 481.8pt x 290.08376pt>
-File: Figures/accuracy_h_tree.png Graphic file (type png)
+ [39 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/time_est
+imation_average_tree_als.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissert
+acao/Document/LaTeX/Figures/time_estimation_total_tree_als.png (PNG copy)> <C:/
+Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/time_estimation_a
+verage_tree_h.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Docume
+nt/LaTeX/Figures/time_estimation_total_tree_h.png (PNG copy)>]
+<Figures/accuracy_als_hmm.png, id=853, 486.81876pt x 290.08376pt>
+File: Figures/accuracy_als_hmm.png Graphic file (type png)
 
-<use Figures/accuracy_h_tree.png>
-Package pdftex.def Info: Figures/accuracy_h_tree.png used on input line 358.
-(pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
+<use Figures/accuracy_als_hmm.png>
+Package pdftex.def Info: Figures/accuracy_als_hmm.png used on input line 555.
+(pdftex.def)             Requested size: 223.07211pt x 132.92226pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/impact_h_tree.png, id=756, 481.8pt x 289.08pt>
-File: Figures/impact_h_tree.png Graphic file (type png)
-
-<use Figures/impact_h_tree.png>
-Package pdftex.def Info: Figures/impact_h_tree.png used on input line 365.
-(pdftex.def)             Requested size: 223.07211pt x 133.84296pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[35 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/metrics/H
-epatitis-log-approach1-sensitivity.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bol
-sa/Dissertacao/Document/LaTeX/Figures/metrics/Hepatitis-log-approach1-specifici
-ty.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Fi
-gures/metrics/Hepatitis-log-approach1-precision.png (PNG copy)> <C:/Users/Danie
-l/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/metrics/Hepatitis-log-approa
-ch1-fmeasure.png (PNG copy)>]
-<Figures/estimation_single_h_hmm.png, id=767, 484.81125pt x 290.08376pt>
-File: Figures/estimation_single_h_hmm.png Graphic file (type png)
-
-<use Figures/estimation_single_h_hmm.png>
-Package pdftex.def Info: Figures/estimation_single_h_hmm.png used on input line
- 395.
-(pdftex.def)             Requested size: 223.07211pt x 133.47556pt.
-
-<Figures/estimation_multi_h_hmm.png, id=768, 481.8pt x 290.08376pt>
-File: Figures/estimation_multi_h_hmm.png Graphic file (type png)
-
-<use Figures/estimation_multi_h_hmm.png>
-Package pdftex.def Info: Figures/estimation_multi_h_hmm.png used on input line 
-396.
-(pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[36 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/estimatio
-n_single_h_tree.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Docu
-ment/LaTeX/Figures/estimation_multi_h_tree.png (PNG copy)> <C:/Users/Daniel/Dro
-pbox/Bolsa/Dissertacao/Document/LaTeX/Figures/time_estimation_average_tree_h.pn
-g (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures
-/time_estimation_total_tree_h.png (PNG copy)>]
-<Figures/time_estimation_average_hmm_h.png, id=783, 481.8pt x 290.08376pt>
-File: Figures/time_estimation_average_hmm_h.png Graphic file (type png)
-
-<use Figures/time_estimation_average_hmm_h.png>
-Package pdftex.def Info: Figures/time_estimation_average_hmm_h.png used on inpu
-t line 409.
-(pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
-
-<Figures/time_estimation_total_hmm_h.png, id=784, 481.8pt x 290.08376pt>
-File: Figures/time_estimation_total_hmm_h.png Graphic file (type png)
-
-<use Figures/time_estimation_total_hmm_h.png>
-Package pdftex.def Info: Figures/time_estimation_total_hmm_h.png used on input 
-line 410.
-(pdftex.def)             Requested size: 223.07211pt x 134.3077pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/accuracy_h_hmm.png, id=787, 484.81125pt x 290.08376pt>
+<Figures/accuracy_h_hmm.png, id=854, 484.81125pt x 290.08376pt>
 File: Figures/accuracy_h_hmm.png Graphic file (type png)
 
 <use Figures/accuracy_h_hmm.png>
-Package pdftex.def Info: Figures/accuracy_h_hmm.png used on input line 426.
+Package pdftex.def Info: Figures/accuracy_h_hmm.png used on input line 556.
 (pdftex.def)             Requested size: 223.07211pt x 133.47556pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/impact_h_hmm.png, id=788, 484.81125pt x 290.08376pt>
+<Figures/impact_als_hmm.png, id=855, 486.81876pt x 290.08376pt>
+File: Figures/impact_als_hmm.png Graphic file (type png)
+
+<use Figures/impact_als_hmm.png>
+Package pdftex.def Info: Figures/impact_als_hmm.png used on input line 564.
+(pdftex.def)             Requested size: 223.07211pt x 132.92226pt.
+
+<Figures/impact_h_hmm.png, id=856, 484.81125pt x 290.08376pt>
 File: Figures/impact_h_hmm.png Graphic file (type png)
 
 <use Figures/impact_h_hmm.png>
-Package pdftex.def Info: Figures/impact_h_hmm.png used on input line 433.
+Package pdftex.def Info: Figures/impact_h_hmm.png used on input line 565.
 (pdftex.def)             Requested size: 223.07211pt x 133.47556pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[37 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/accuracy_
-h_tree.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTe
-X/Figures/impact_h_tree.png (PNG copy)>] [38 <C:/Users/Daniel/Dropbox/Bolsa/Dis
-sertacao/Document/LaTeX/Figures/estimation_single_h_hmm.png> <C:/Users/Daniel/D
-ropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/estimation_multi_h_hmm.png (PNG
- copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/time_
-estimation_average_hmm_h.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissert
-acao/Document/LaTeX/Figures/time_estimation_total_hmm_h.png (PNG copy)>]
-[39 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/accuracy_
-h_hmm.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX
-/Figures/impact_h_hmm.png>] [40
+[40 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/accuracy_
+als_tree.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/La
+TeX/Figures/accuracy_h_tree.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Diss
+ertacao/Document/LaTeX/Figures/impact_als_tree.png (PNG copy)> <C:/Users/Daniel
+/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/impact_h_tree.png (PNG copy)>
+] [41 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/estimat
+ion_single_als_hmm.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/D
+ocument/LaTeX/Figures/estimation_multi_als_hmm.png (PNG copy)> <C:/Users/Daniel
+/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/estimation_single_h_hmm.png (
+PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/es
+timation_multi_h_hmm.png (PNG copy)>] [42 <C:/Users/Daniel/Dropbox/Bolsa/Disser
+tacao/Document/LaTeX/Figures/time_estimation_average_hmm_als.png (PNG copy)> <C
+:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/time_estimation
+_total_hmm_als.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Docum
+ent/LaTeX/Figures/time_estimation_average_hmm_h.png (PNG copy)> <C:/Users/Danie
+l/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/time_estimation_total_hmm_h.
+png (PNG copy)>] [43 <C:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/
+Figures/accuracy_als_hmm.png (PNG copy)> <C:/Users/Daniel/Dropbox/Bolsa/Dissert
+acao/Document/LaTeX/Figures/accuracy_h_hmm.png (PNG copy)> <C:/Users/Daniel/Dro
+pbox/Bolsa/Dissertacao/Document/LaTeX/Figures/impact_als_hmm.png (PNG copy)> <C
+:/Users/Daniel/Dropbox/Bolsa/Dissertacao/Document/LaTeX/Figures/impact_h_hmm.pn
+g (PNG copy)>] [44
 
 ])
 (C:\Users\Daniel\Dropbox\Bolsa\Dissertacao\Document\LaTeX\Thesis_Conclusions.te
@@ -1347,15 +1488,15 @@ Chapter 6.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41
+ [45
 
 ]
-[42]) (C:\Users\Daniel\Dropbox\Bolsa\Dissertacao\Document\LaTeX\Thesis.bbl
-[43
+[46]) (C:\Users\Daniel\Dropbox\Bolsa\Dissertacao\Document\LaTeX\Thesis.bbl
+[47
 
 
 
-] [44] [45]) [46]
+] [48] [49]) [50]
 
 Package natbib Warning: There were undefined citations.
 
@@ -1365,7 +1506,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4A0F90C0BB7DF981B88A6A346F680278;2929.
+(rerunfilecheck)             Checksum: DA71E5BB918DFC801276280A56FB161E;3009.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1373,10 +1514,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
  ) 
 Here is how much of TeX's memory you used:
- 9812 strings out of 493921
- 143262 string characters out of 3147279
- 253503 words of memory out of 3000000
- 12591 multiletter control sequences out of 15000+200000
+ 9937 strings out of 493921
+ 146512 string characters out of 3147279
+ 255623 words of memory out of 3000000
+ 12669 multiletter control sequences out of 15000+200000
  44229 words of font info for 79 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  41i,10n,35p,1000b,587s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1390,9 +1531,9 @@ cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Thesis.pdf (62 pages, 828994 bytes).
+Output written on Thesis.pdf (66 pages, 1277597 bytes).
 PDF statistics:
- 925 PDF objects out of 1000 (max. 8388607)
- 237 named destinations out of 1000 (max. 500000)
- 548 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1012 PDF objects out of 1200 (max. 8388607)
+ 268 named destinations out of 1000 (max. 500000)
+ 621 words of extra memory for PDF output out of 10000 (max. 10000000)
 
